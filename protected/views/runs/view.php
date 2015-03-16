@@ -56,7 +56,7 @@ $this->menu = array (
 
 
 <div class="infoblock shadow">
-	<h1 style="color: #20B2AA;">Dashboard - <?php echo $nomeApp; ?></h1>
+	<h1 style="color: #20B2AA; font-family: Arial">Dashboard - <?php echo $nomeApp; ?></h1>
 </div>
 <HR SIZE=30 WIDTH=1180 ALIGN=LEFT>
 

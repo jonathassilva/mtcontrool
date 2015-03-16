@@ -4,13 +4,14 @@
 
 body {
     font-family: 'Josefin Slab', serif;
-    font-size: 15px;
-    line-height: 2.4;
-    background: #333333;
+    font-size: 17px;
+    line-height: 1.5;
+    background: #F0FFFF;
     height: 350px;
     padding: 0;
     margin: 0;
-	color: #ffffff;
+	color: #000000;
+	
 	
 }
 
@@ -84,9 +85,9 @@ body {
     border: 1px solid #999999;
     border-radius: 5;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-    color: #333333;
+    color: #000000;
     display: block;
-    font-size: 14px;
+    font-size: 17px;
     height: 34px;
     line-height: 1.42857;
     padding: 6px 12px;
@@ -154,9 +155,14 @@ color: #000000;
 
 .help-block,
 .help-inline {
-  color: #ffffff;
+
+  color: #000000;
 }
 
+.soc-block,
+.soc-inline {
+  color: #ffffff;
+}
 
 a {
   color: #000000;
@@ -274,12 +280,12 @@ a:focus {
 
 .table-striped tbody > tr:nth-child(odd) > td,
 .table-striped tbody > tr:nth-child(odd) > th {
-  background-color: #333333;
+  background-color: #ffffff;
 }
 
 .table-hover tbody tr:hover > td,
 .table-hover tbody tr:hover > th {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 
@@ -295,6 +301,7 @@ table {
   margin-bottom: 20px;
 }
 
+
 .table th,
 .table td {
   padding: 8px;
@@ -305,19 +312,23 @@ table {
 }
 
 
+
+
 .form-actions {
   padding: 19px 20px 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #333333;
-  border-top: 1px solid #333333;
+  background-color: #D3D3D3;
+
   *zoom: 1;
 }
 
 label {
   display: block;
   margin-bottom: 10px;
-  color: #00CC99;
+ * color: #00CC99;
+ color: #000000;
+  font-weight: bold;
 }
 
 
@@ -325,13 +336,14 @@ label {
 .checkbox {
   min-height: 20px;
   padding-left: 20px;
-  color: #ffffff;
+  color: #000000;
+  font-weight: normal;
 }
 
 
 p {
   margin: 0 0 10px;
-  color: #ffffff;
+  color: #000000;
 }
 
 
@@ -397,7 +409,7 @@ p {
 
 .grid-view .summary {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 17px;
   padding: 6px 0;
   text-align: right;
   }
@@ -446,9 +458,10 @@ button,
 select,
 textarea {
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 20px;
   font-family: 'Josefin Slab', serif;
+  
 }
 
 
@@ -462,7 +475,7 @@ textarea {
   background-repeat: repeat-x;
   border-color: #252525;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
-  border-bottom: 3px solid #40E0D0;
+  border-bottom: 8px solid #40E0D0;
 }
 
 .navbar-inverse .brand,
@@ -636,5 +649,87 @@ border-radius: 4px;
 box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
 
+.grid-view .table .button-column {
+text-align: right;
+min-width: 70px;
+*background-color: #2E8B57;
+
+}
 
 
+.littlehelp {
+
+  padding: 3px;
+  margin: 0 0 20px;
+  width: 650px;
+  height: 30px;
+  background-color:#B22222;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+color: #000000;
+
+
+		  
+}
+
+.container {
+margin-right: 10px;
+margin-left: 50px;
+*background-color: #D3D3D3;
+}
+
+hr {
+margin: 20px 0;
+border: 0;
+border-top: 1px solid #333333;
+border-bottom: 1px solid #fff;
+}
+
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+
+.testanto{
+	
+	background-color:#F0FFFF;
+	border-radius: 3px;
+	margin-left: auto;
+    margin-right: auto;
+	*border-top: 1px solid #D3D3D3;
+	
+	
+}
+
+form {
+	margin: 50px 5px 50px;
+	margin-top: 30px;
+	
+}
+
+[class*="span"] {
+float: left;
+min-height: 1px;
+margin-left: 30px;
+}
+
+.grid-view .table th>.sort-link {
+color: #333;
+display: block;
+font-size: 18px;
+font-weight: bold;
+position: relative;
+}
+
+.grid-view .table td {
+  vertical-align: middle;
+  
+}

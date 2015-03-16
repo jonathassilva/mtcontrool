@@ -11,7 +11,7 @@
 
 
 
-<div class="infoblock shadow"><h1 style="color:#20B2AA;">View Platform - <?php echo $model->name; ?></h1></div>
+<div class="infoblock shadow"><h1 style="color:#20B2AA; font-family: Arial">View Platform - <?php echo $model->name; ?></h1></div>
 <HR WIDTH=1180 ALIGN=LEFT >
 
 <?php $this->widget('bootstrap.widgets.TbBreadcrumb', array(

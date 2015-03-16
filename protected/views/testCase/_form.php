@@ -34,7 +34,7 @@
               
                 
                 echo $form->dropDownListControlGroup($model,'id_criteria',CHtml::listData(Criteria::model()->findAll(),'id', 'name'),
-                        array('empty' => 'selected',
+                        array(
                                 'ajax' => array(
                                     'type' => 'POST',
                                     'url' => CController::createUrl('TestCase/Selectdos'),
@@ -44,8 +44,10 @@
                                 
                             )
                         ); ?>
-   
-               <?php echo $form->dropDownListControlGroup($model,'id_characteristic',array(),
+    <div class="littlehelp">
+            <p class="soc-block"> <span class="icon icon-arrow-right" aria-hidden="true"></span> If you wouldn't choose a characteristic, the test case'll be considered default (obrigatory).</p>
+    </div>        
+  <?php echo $form->dropDownListControlGroup($model,'id_characteristic',array(),
                         array(
                             'ajax' => array(
                                     'type' => 'POST',

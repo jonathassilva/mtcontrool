@@ -50,7 +50,7 @@ class RunsController extends Controller {
                 'allow', // allow authenticated user to perform 'create' and 'update' actions
                 'actions' => array(
                     'create',
-                    'update'
+                    'update','admin','delete'
                 ),
                 'users' => array(
                     '@'

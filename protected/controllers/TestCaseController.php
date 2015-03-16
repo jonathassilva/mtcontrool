@@ -28,15 +28,15 @@ class TestCaseController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','Selectdos'),
+				'actions'=>array('index','view','Selectdos','Selectdos1'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','admin','delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array(),
 				'users'=>array('*'),
 			),
 			array('deny',  // deny all users
@@ -201,6 +201,8 @@ class TestCaseController extends Controller
             $lista = CHtml::listData($lista,'id','name');
             //var_dump($lista);
             
+            echo CHtml::tag('option',array('value' => ''), 'Select', TRUE);
+            
             foreach($lista as $valor => $name){
                 echo CHtml::tag('option',array('value'=>$valor),CHtml::encode($name),true);
             }
@@ -211,20 +213,19 @@ class TestCaseController extends Controller
         public function actionSelectdos1(){
            
             //$id_cri = $_POST['TestCase']['id_criteria'];
-            $id_cri = $_POST['TestCase']['id_characteristic'];
+            $id_cha = $_POST['TestCase']['id_characteristic'];
             
-            $sql = 'SELECT id_platform FROM characteristic_platforms WHERE '.$id_cri.'=id_characteristic';
-            $list= Yii::app()->db->createCommand($sql)->queryAll();
-            $rs=array();
+           // $sql = 'SELECT id_platform FROM characteristic_platforms WHERE '.$id_cri.'=id_characteristic';
+            //$list= Yii::app()->db->createCommand($sql)->queryAll();
+            /*$rs=array();
             foreach($list as $item){
                 //process each item here
                 $rs[]=$item['id_platform'];
-            }
+            }*/
             
- 
+            echo CHtml::tag('option',array('value' => ''), 'Select', TRUE);
             
-            
-            $lista = Characteristic::model()->findAll('id_characteristic  = :id_cri',  array(':id_cri'=>$id_cri));
+            $lista = CharacteristicPlatforms::model()->findAll('id_characteristic  = :id_cha',  array(':id_cha'=>$id_cha));
             $lista = CHtml::listData($lista,'id','name');
             //var_dump($lista);
             

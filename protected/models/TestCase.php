@@ -21,6 +21,8 @@
  * @property TestPlatform[] $testPlatforms
  * @property TestRun[] $testRuns
   * @property Platforms[] $platforms
+  * @property CharacteristicPlatforms[] $characteristicplatforms
+ 
  */
 class TestCase extends CActiveRecord
 {
@@ -40,7 +42,7 @@ class TestCase extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('num, name, description, required, note, steps, result, id_characteristic, id_criteria', 'required'),
+			array('num, name, description, required, note, steps, result, id_criteria', 'required'),
 			array('id_characteristic, id_criteria', 'numerical', 'integerOnly'=>true),
 			array('num', 'length', 'max'=>10),
 			array('name, required', 'length', 'max'=>100),
@@ -63,6 +65,7 @@ class TestCase extends CActiveRecord
 			'testPlatforms' => array(self::HAS_MANY, 'TestPlatform', 'id_test_case'),
 			'testRuns' => array(self::HAS_MANY, 'TestRun', 'id_test_case'),
                         'platforms' => array(self::MANY_MANY, 'Platforms', 'test_platform(id_platform, id_test_case)'),
+                        'characteristicplatforms'=>array(self::MANY_MANY,'CharacteristicPlatforms','characteristic_platforms(id_platform,id_characteristic)'),
 		);
 	}
         

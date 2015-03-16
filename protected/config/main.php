@@ -21,12 +21,15 @@ return array(
 		
 	// autoloading model and component classes
 	'import' => array (
+    
+            
 			'application.models.*',
 			'application.components.*',
 			'bootstrap.helpers.TbHtml',
 			'bootstrap.helpers.TbArray',
 			'bootstrap.behaviors.TbWidget',
-			'bootstrap.widgets.*' 
+			'bootstrap.widgets.*'
+                       
 	),
 
 	'modules'=>array(

@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 body {
     font-family: 'Josefin Slab', serif;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5;
-    background: #333333;
+    background: #ffffff;
     height: 350px;
     padding: 0;
     margin: 0;
-	color: #ffffff;
+	color: #000000;
 	
 }
 .container-login {
@@ -16,6 +16,7 @@ body {
     color: #333333;
     margin-top: 70px;
     padding: 0;
+	
 }
 .center-block {
     display: block;
@@ -44,6 +45,7 @@ body {
 .container-login .nav-tabs.nav-justified > li > a:focus {
     background: #00CC99;
 	border-radius: 3px;
+	
 	color: #ffffff;
 	font-size: 18px;
     margin-bottom: 0;
@@ -62,13 +64,21 @@ body {
     background: #00CC99;
 	border-radius: 3px;
 }
+
+
 .tabs-login {
-    background: #ffffff;
-    border-color: #000000;
+    background: #F0FFFF;
+	
+    
 	border-radius: 5px;
-    margin-top: -1px;
+	border-color: #000000;
+   
     padding: 30px 50px;
+	font-size: 17px;
 }
+
+
+
 .container-login h2 {
     color: #191970;
 	position: left;
@@ -81,7 +91,7 @@ body {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
     color: #333333;
     display: block;
-    font-size: 14px;
+    font-size: 17px;
     height: 34px;
     line-height: 1.42857;
     padding: 6px 12px;
@@ -122,7 +132,7 @@ body {
   background-repeat: repeat-x;
   border-color: #252525;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
-  border-bottom: 3px solid #40E0D0;
+  border-bottom: 8px solid #40E0D0;
 }
 
 .navbar-inverse .brand,
@@ -285,3 +295,8 @@ body {
 
 
 
+label, input, button, select, textarea {
+font-size: 17px;
+font-weight: normal;
+line-height: 20px;
+}

@@ -19,7 +19,10 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
- <link rel="shortcut icon" href="/images/mtc.ico">
+
+     
+<link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/mtc.ico" type="image/x-icon" />
+
     
 
 
@@ -41,14 +44,16 @@
 										'class' => 'bootstrap.widgets.TbNav',
 										'items' => array (
 												
-												//array (
-												//		'label' => 'Register Here',
-                                                                                                //                'icon' => 'icon-pencil icon-white icon-center',
-												//		'url' => array (
-												//				'/users/register' 
-												//		),
-														
-											//	),
+                                                                                                array (
+														'label' => 'Register',
+                                                                                                                'icon' => 'icon-pencil-white',
+														'url' => array (
+																'/users/register' 
+														),
+														'visible' => Yii::app ()->user->isGuest 
+												),
+                                                                                              
+												
 												
 												array (
 														'label' => 'User',
@@ -56,7 +61,7 @@
 														'url' => array (
 																'/user' 
 														),
-														'visible' => ! Yii::app ()->user->isGuest,
+														'visible' => Yii::app ()->user->name === 'admin',
 														'items' => array (
 																array (
 																		'label' => 'New User',
@@ -65,19 +70,22 @@
 																		),
                                                                                                                                    
 																),
-																array (
-																		'label' => 'My Users',
-																		'url' => array (
-																				'/users/index' 
-																		) 
-																),
+																
 																array (
 																		'label' => 'Manage Users',
 																		'url' => array (
 																				'/users/admin' 
 																		),
 																		'visible' => Yii::app ()->user->name === 'admin' 
-																) 
+																),
+                                                                                                                                array(
+                                                                                                                                                'label' => 'Change Password',
+                                                                                                                                                'url' => array(
+                                                                                                                                                                'site/changepassword'
+                                                                                                                                                ),
+                                                                                                                                                
+                                                                                                                                    
+                                                                                                                                )
 														) 
 												),
 										                                                                                   
@@ -89,25 +97,20 @@
 														'url' => array (
 																'/app' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin',
+														'visible' => ! Yii::app ()->user->isGuest,
 														'items' => array (
 																array (
 																		'label' => 'New App',
 																		'url' => array (
 																				'/app/create' 
-																		) 
+																		),'visible' => ! Yii::app ()->user->isGuest,
 																),
-																array (
-																		'label' => 'My Apps',
-																		'url' => array (
-																				'/app/index' 
-																		) 
-																),
+																
 																array (
 																		'label' => 'Manage Apps',
 																		'url' => array (
 																				'/app/admin' 
-																		) 
+																		),'visible' => ! Yii::app ()->user->isGuest, 
 																) 
 														) 
 												),
@@ -117,105 +120,89 @@
 														'url' => array (
 																'/manage' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin',
+														'visible' => Yii::app ()->user->name === 'admin',
 														'items' => array (
 																array (
 																		'label' => 'Language',
                                                                                                                                                 'icon' => 'icon-volume-up',
+                                                                                                                                                'visible' => Yii::app ()->user->name === 'admin',
 																		                                                                                                                                                'items' => array (
 																array (
 																		'label' => 'New Language',
 																		'url' => array (
 																				'/languages/create' 
-																		) 
+																		),'visible' => Yii::app ()->user->name === 'admin',
 																),
-																array (
-																		'label' => 'My Languages',
-																		'url' => array (
-																				'/languages/index' 
-																		) 
-																),
+																
 																array (
 																		'label' => 'Manage Languages',
 																		'url' => array (
 																				'/languages/admin' 
 																		),
-																		'visible' => Yii::app ()->user->name === 'admin' 
+																		'visible' => Yii::app ()->user->name === 'admin',
 																) ) 
 																),
                                                                                                                     
 																array (
 																		'label' => 'Criteria',
                                                                                                                                                 'icon' => 'icon-align-justify',
+                                                                                                                                                'visible' => ! Yii::app ()->user->isGuest,
 																		                                                                                                                                                'items' => array (
 																array (
 																		'label' => 'New Criteria',
 																		'url' => array (
 																				'/criteria/create' 
-																		) 
+																		),'visible' => ! Yii::app ()->user->isGuest, 
 																),
-																array (
-																		'label' => 'My Criterias',
-																		'url' => array (
-																				'/criteria/index' 
-																		) 
-																),
+																
 																array (
 																		'label' => 'Manage Criterias',
 																		'url' => array (
 																				'/criteria/admin' 
 																		),
-																		'visible' => Yii::app ()->user->name === 'admin' 
+																		'visible' => ! Yii::app ()->user->isGuest, 
 																) ) 
 																),
                                                                                                                     
                                                                                                                             array (
 																		'label' => 'Characteristic',
                                                                                                                                                 'icon' => 'icon-list',
+                                                                                                                                                'visible' => ! Yii::app ()->user->isGuest,
 																		                                                                                                                                                'items' => array (
 																array (
 																		'label' => 'New Characteristic',
 																		'url' => array (
 																				'/characteristic/create' 
-																		) 
+																		),'visible' => ! Yii::app ()->user->isGuest, 
 																),
-																array (
-																		'label' => 'My Criterias',
-																		'url' => array (
-																				'/characteristic/index' 
-																		) 
-																),
+																
 																array (
 																		'label' => 'Manage Criterias',
 																		'url' => array (
 																				'/characteristic/admin' 
 																		),
-																		'visible' => Yii::app ()->user->name === 'admin' 
+																		'visible' => ! Yii::app ()->user->isGuest, 
 																) ) 
 																),
                                                                                                                     
                                                                                                                     array (
 																		'label' => 'Platform',
                                                                                                                                                 'icon' => 'icon-tasks',
+                                                                                                                                                'visible' => ! Yii::app ()->user->isGuest,
 																		                                                                                                                                                'items' => array (
 																array (
 																		'label' => 'New Platform',
 																		'url' => array (
 																				'/platforms/create' 
-																		) 
+																		),'visible' => ! Yii::app ()->user->isGuest, 
 																),
-																array (
-																		'label' => 'My Platforms',
-																		'url' => array (
-																				'/platforms/index' 
-																		) 
-																),
+																
 																array (
 																		'label' => 'Manage Platforms',
 																		'url' => array (
 																				'/platforms/admin' 
 																		),
-																		'visible' => Yii::app ()->user->name === 'admin' 
+																		'visible' => ! Yii::app ()->user->isGuest,
 																) ) 
 																),
 																
@@ -229,25 +216,20 @@
 														'url' => array (
 																'/testCase' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin',
+														'visible' => Yii::app ()->user->name === 'admin',
 														'items' => array (
 																array (
 																		'label' => 'New Test Case',
 																		'url' => array (
 																				'/testCase/create' 
-																		) 
+																		),'visible' => ! Yii::app ()->user->isGuest,
 																),
-																array (
-																		'label' => 'My Test Cases',
-																		'url' => array (
-																				'/testCase/index' 
-																		) 
-																),
+																
 																array (
 																		'label' => 'Manage Test Cases',
 																		'url' => array (
 																				'/testCase/admin' 
-																		) 
+																		),'visible' => ! Yii::app ()->user->isGuest, 
 																) 
 														) 
 												),
@@ -257,25 +239,20 @@
 														'url' => array (
 																'/runs' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin',
+														'visible' => ! Yii::app ()->user->isGuest,
 														'items' => array (
 																array (
 																		'label' => 'New Run',
 																		'url' => array (
 																				'/runs/create' 
-																		) 
+																		),'visible' => ! Yii::app ()->user->isGuest, 
 																),
-																array (
-																		'label' => 'My Runs',
-																		'url' => array (
-																				'/runs/index' 
-																		) 
-																),
+																
 																array (
 																		'label' => 'Manage Runs',
 																		'url' => array (
 																				'/runs/admin' 
-																		) 
+																		),'visible' => ! Yii::app ()->user->isGuest, 
 																) 
 														) 
 												),
@@ -284,21 +261,21 @@
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest, 
 												),
 												array (
 														'label' => '',
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest, 
 												),
 												array (
 														'label' => '',
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest,
 												),
 												
 												array (
@@ -306,42 +283,49 @@
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest,
 												),
 												array (
 														'label' => '',
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest, 
 												),
 												array (
 														'label' => '',
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest,
 												),
 												array (
 														'label' => '',
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest, 
 												),
 												array (
 														'label' => '',
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest,
 												),
 												array (
 														'label' => '',
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest, 
+												),
+												array (
+														'label' => '',
+														'url' => array (
+																'#' 
+														),
+														'visible' => ! Yii::app ()->user->isGuest, 
 												),
 												
 												array (
@@ -349,23 +333,9 @@
 														'url' => array (
 																'#' 
 														),
-														'visible' => Yii::app ()->user->name == 'admin' 
+														'visible' => ! Yii::app ()->user->isGuest, 
 												),
 												
-												array (
-														'label' => '',
-														'url' => array (
-																'#' 
-														),
-														'visible' => Yii::app ()->user->name == 'admin' 
-												),
-												array (
-														'label' => '',
-														'url' => array (
-																'#' 
-														),
-														'visible' => Yii::app ()->user->name == 'admin' 
-												),
 												
 												array (
 														'label' => 'Login',
@@ -373,10 +343,10 @@
 														'url' => array (
 																'/site/login' 
 														),
-														'visible' => Yii::app ()->user->isGuest 
+														'visible' => Yii::app ()->user->isGuest,
 												),
 												array (
-														'label' => '' . Yii::app ()->user->name . '.',
+														'label' => '' . Yii::app ()->user->name,
                                                                                                                 'icon' => 'icon-user',
 														'visible' => ! Yii::app ()->user->isGuest,
 														'items' => array (
@@ -445,7 +415,7 @@
 
 	<br />
 	<br />
-	<br />
+	<br/>
 
 
 
@@ -482,15 +452,10 @@
 
         
         
-        </br></br>
+</br></br></br></br>
 	<div class="footer text-center">
-            
-                
-              
-              
-            
                 MTControol &copy; <?php echo date('Y'); ?> by UFAM.
-                <br>All Rights Reserved.
+                <br>
 
 	</div>
 	<!-- footer -->

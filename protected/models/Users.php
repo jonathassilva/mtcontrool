@@ -120,4 +120,13 @@ class Users extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        
+        # Função para converter em md5 a variavel password 
+        public function beforeSave() 
+        { 
+            $pass = md5(md5($this->password).Yii::app()->params["salt"]); 
+            $this->password = $pass; 
+            return true; 
+        } 
 }
