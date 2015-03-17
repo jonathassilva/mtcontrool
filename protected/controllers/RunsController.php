@@ -328,15 +328,18 @@ class RunsController extends Controller {
     
     
     public function actionSaveAndroidQuest($id) {
-    		
-    	//array com os testes default
-    	$defaultTestsKeys = array( 1.1, 1.2, 1.3, 1.4,2.2, 2.3, 2.4, 5.3, 6.1, 6.2, 6.3, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 7.15, 7.16, 8.1, 8.3, 8.4,9.1, 9.2, 9.3, 12.1, 12.2, 15.1, 15.2);
-    		
+
+    	$run = Runs::model()->findByPk($id);
+    	$plataforma = Platforms::model()->findByPk($run['id_platform']);
     	
+    	//array com os testes default
+    	$defaultTestsKeys = array( '1.1', '1.2', '1.3', '1.4', '2.2', '2.3', '2.4', '5.3', '6.1', '6.2', '6.3', '7.1', '7.2', '7.3', '7.4', '7.5', '7.6', '7.7', '7.8', '7.9', '7.15', '7.16', '8.1', '8.3', '8.4','9.1', '9.2', '9.3', '12.1', '12.2', '15.1', '15.2');
+
     	//consertar essa gambiarra URGENTE
     	foreach ( $defaultTestsKeys as $key ) {
-    		$testRuns = TestCase::model ()->findBySql ( 'SELECT * FROM `test_case` where num = ' .$key);
-    		$id_testcase = $testRuns->id;
+    		$test_case = TestCase::model()->findBySql("SELECT tc.* FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = $key AND tp.id_platform = $plataforma->id AND tp.id_test_case = tc.id");
+    		print_r($test_case);
+    		$id_testcase = $test_case->id;
     		$id_runs = $id;
     		$connection = Yii::app ()->db;
     		$command = $connection->createCommand ( "INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES ('$id_runs','$id_testcase',0)" );
