@@ -9256,3 +9256,799 @@ in C:\development\xampp\htdocs\mtcontrool\index.php (15)
 2015/03/17 13:41:52 [trace] [system.CModule] Loading "errorHandler" application component
 in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (342)
 in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:28:28 [trace] [system.CModule] Loading "log" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:28:28 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:28:28 [trace] [system.CModule] Loading "request" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:28:28 [trace] [system.CModule] Loading "urlManager" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:28:28 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\views\layouts\column1.php (2)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\SiteController.php (32)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:28:28 [trace] [system.CModule] Loading "assetManager" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (216)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (52)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (93)
+2015/03/17 16:28:28 [trace] [system.CModule] Loading "clientScript" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (54)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (93)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (138)
+2015/03/17 16:28:28 [trace] [system.CModule] Loading "user" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\views\layouts\main.php (53)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\layouts\column1.php (6)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\SiteController.php (32)
+2015/03/17 16:28:28 [trace] [system.CModule] Loading "session" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\views\layouts\main.php (53)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\layouts\column1.php (6)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\SiteController.php (32)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "log" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "request" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "urlManager" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.web.filters.CFilterChain] Running filter RunsController.filteraccessControl()
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "user" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "session" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "db" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (145)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (145)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (145)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (145)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (18)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:31 [trace] [system.db.ar.CActiveRecord] App.findAllByAttributes()
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_form.php (31)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (20)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+2015/03/17 16:53:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `app`
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_form.php (31)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (20)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+2015/03/17 16:53:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `app`
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_form.php (31)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (20)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+2015/03/17 16:53:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `app` `t` WHERE `t`.`id_users`=:yp0
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_form.php (31)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (20)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+2015/03/17 16:53:31 [trace] [system.db.ar.CActiveRecord] Platforms.findAll()
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_form.php (37)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (20)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+2015/03/17 16:53:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `platforms`
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_form.php (37)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (20)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+2015/03/17 16:53:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `platforms`
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_form.php (37)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (20)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+2015/03/17 16:53:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `platforms` `t`
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_form.php (37)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (20)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "clientScript" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_form.php (48)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\create.php (20)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (164)
+2015/03/17 16:53:31 [trace] [system.CModule] Loading "assetManager" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (216)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (52)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (93)
+2015/03/17 16:53:41 [trace] [system.CModule] Loading "log" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.CModule] Loading "request" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.CModule] Loading "urlManager" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.web.filters.CFilterChain] Running filter RunsController.filteraccessControl()
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.CModule] Loading "user" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.CModule] Loading "session" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.CModule] Loading "db" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (145)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (145)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (145)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (145)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [application.components.CSaveRelatedBehavior] beforeSave start transaction
+in C:\development\xampp\htdocs\mtcontrool\protected\components\CSaveRelationsBehavior.php (233)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (153)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.db.CDbConnection] Starting transaction
+in C:\development\xampp\htdocs\mtcontrool\protected\components\CSaveRelationsBehavior.php (234)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (153)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.db.ar.CActiveRecord] Runs.insert()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (153)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:41 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `runs` (`id_app`, `id_platform`, `description`, `changelog`) VALUES (:yp0, :yp1, :yp2, :yp3)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (153)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.CDbTransaction] Committing transaction
+in C:\development\xampp\htdocs\mtcontrool\protected\components\CSaveRelationsBehavior.php (332)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (153)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "log" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "request" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "urlManager" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.web.filters.CFilterChain] Running filter RunsController.filteraccessControl()
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "user" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "session" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.ar.CActiveRecord] Runs.findByPk()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (328)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "db" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (328)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (328)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (328)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (328)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `runs` `t` WHERE `t`.`id`=5 LIMIT 1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (328)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.ar.CActiveRecord] Platforms.findByPk()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (329)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `platforms`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (329)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `platforms`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (329)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `platforms` `t` WHERE `t`.`id`=1 LIMIT 1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (329)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\quest.php (18)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (335)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "clientScript" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\_questAndroid.php (136)
+in C:\development\xampp\htdocs\mtcontrool\protected\views\runs\quest.php (24)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (335)
+2015/03/17 16:53:42 [trace] [system.CModule] Loading "assetManager" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (216)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (52)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (93)
+2015/03/17 16:53:45 [trace] [system.CModule] Loading "log" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:45 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:45 [trace] [system.CModule] Loading "request" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:45 [trace] [system.CModule] Loading "urlManager" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:45 [trace] [system.web.filters.CFilterChain] Running filter RunsController.filteraccessControl()
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:45 [trace] [system.CModule] Loading "user" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:45 [trace] [system.CModule] Loading "session" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:45 [trace] [system.db.ar.CActiveRecord] Runs.findByPk()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (349)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:45 [trace] [system.CModule] Loading "db" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (349)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:45 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (349)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (349)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (349)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `runs` `t` WHERE `t`.`id`=5 LIMIT 1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (349)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] Platforms.findByPk()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (350)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `platforms`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (350)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `platforms`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (350)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `platforms` `t` WHERE `t`.`id`=1 LIMIT 1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (350)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '1.1' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `test_case`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `test_case`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,2,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '1.2' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,3,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '1.3' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,4,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '1.4' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,5,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '2.2' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,7,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '2.3' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,8,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '2.4' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,9,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '5.3' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,23,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '6.1' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,24,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '6.2' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,25,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '6.3' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,26,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.1' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:46 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,27,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.2' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,28,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.3' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,29,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.4' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,30,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.5' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,31,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.6' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,32,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.7' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,33,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.8' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,34,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.9' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,35,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.15' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,41,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '7.16' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '8.1' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,42,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '8.3' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,44,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '8.4' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,45,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '9.1' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,46,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '9.2' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,47,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '9.3' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,48,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '12.1' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,60,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '12.2' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,61,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '15.1' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,72,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.ar.CActiveRecord] TestCase.findBySql()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT id FROM `test_case`AS tc, `test_platform` AS tp WHERE tc.num = '15.2' AND tp.id_platform = 1 AND tp.id_test_case = tc.id
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (393)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `test_run`(`id_runs`, `id_test_case`, `status`) VALUES (5,73,0)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (401)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.CModule] Loading "log" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.CModule] Loading "request" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.CModule] Loading "urlManager" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.web.filters.CFilterChain] Running filter RunsController.filteraccessControl()
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.CModule] Loading "user" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.CModule] Loading "session" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.db.ar.CActiveRecord] Runs.findByPk()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.CModule] Loading "db" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `runs` `t` WHERE `t`.`id`=5 LIMIT 1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT tr.id as IDTestRun, c.name as NomeCriterio, tc.num as NumeroTeste, tc.name as NomeTeste, tc.description as Descricao, tc.notes as Notas, tc.steps as Passos, tc.result as Resultado, tr.status as Status 
+    			FROM criteria as c, test_case as tc, test_run as tr 
+    			WHERE tr.id_test_case = tc.id AND tr.id_runs = '5' AND c.id = tc.id_criteria
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (92)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (92)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tc.notes' in 'field list'. The SQL statement executed was: SELECT tr.id as IDTestRun, c.name as NomeCriterio, tc.num as NumeroTeste, tc.name as NomeTeste, tc.description as Descricao, tc.notes as Notas, tc.steps as Passos, tc.result as Resultado, tr.status as Status 
+    			FROM criteria as c, test_case as tc, test_run as tr 
+    			WHERE tr.id_test_case = tc.id AND tr.id_runs = '5' AND c.id = tc.id_criteria.
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (92)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:53:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tc.notes' in 'field list'. The SQL statement executed was: SELECT tr.id as IDTestRun, c.name as NomeCriterio, tc.num as NumeroTeste, tc.name as NomeTeste, tc.description as Descricao, tc.notes as Notas, tc.steps as Passos, tc.result as Resultado, tr.status as Status 
+    			FROM criteria as c, test_case as tc, test_run as tr 
+    			WHERE tr.id_test_case = tc.id AND tr.id_runs = '5' AND c.id = tc.id_criteria' in C:\development\frameworks\yii-1.1.15.022a51\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\development\frameworks\yii-1.1.15.022a51\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php(92): CDbCommand->queryAll()
+#2 [internal function]: RunsController->actionView('5')
+#3 C:\development\frameworks\yii-1.1.15.022a51\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RunsController), Array)
+#4 C:\development\frameworks\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RunsController), Object(ReflectionMethod), Array)
+#5 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\development\frameworks\yii-1.1.15.022a51\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\development\frameworks\yii-1.1.15.022a51\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\development\frameworks\yii-1.1.15.022a51\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\development\frameworks\yii-1.1.15.022a51\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('runs/view')
+#15 C:\development\frameworks\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\development\xampp\htdocs\mtcontrool\index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/mtcontrool/index.php/runs/5
+HTTP_REFERER=http://localhost/mtcontrool/index.php/runs/quest/5
+---
+2015/03/17 16:53:49 [trace] [system.CModule] Loading "errorHandler" application component
+2015/03/17 16:59:28 [trace] [system.CModule] Loading "log" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.CModule] Loading "request" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.CModule] Loading "urlManager" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.web.filters.CFilterChain] Running filter RunsController.filteraccessControl()
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.CModule] Loading "user" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.CModule] Loading "session" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.db.ar.CActiveRecord] Runs.findByPk()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.CModule] Loading "db" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `runs` `t` WHERE `t`.`id`=5 LIMIT 1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT tr.id as IDTestRun, c.name as NomeCriterio, tc.num as NumeroTeste, tc.name as NomeTeste, tc.description as Descricao, tc.notes as Notas, tc.steps as Passos, tc.result as Resultado, tr.status as Status 
+    			FROM criteria as c, test_case as tc, test_run as tr 
+    			WHERE tr.id_test_case = tc.id AND tr.id_runs = '5' AND c.id = tc.id_criteria
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (92)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (92)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tc.notes' in 'field list'. The SQL statement executed was: SELECT tr.id as IDTestRun, c.name as NomeCriterio, tc.num as NumeroTeste, tc.name as NomeTeste, tc.description as Descricao, tc.notes as Notas, tc.steps as Passos, tc.result as Resultado, tr.status as Status 
+    			FROM criteria as c, test_case as tc, test_run as tr 
+    			WHERE tr.id_test_case = tc.id AND tr.id_runs = '5' AND c.id = tc.id_criteria.
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (92)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tc.notes' in 'field list'. The SQL statement executed was: SELECT tr.id as IDTestRun, c.name as NomeCriterio, tc.num as NumeroTeste, tc.name as NomeTeste, tc.description as Descricao, tc.notes as Notas, tc.steps as Passos, tc.result as Resultado, tr.status as Status 
+    			FROM criteria as c, test_case as tc, test_run as tr 
+    			WHERE tr.id_test_case = tc.id AND tr.id_runs = '5' AND c.id = tc.id_criteria' in C:\development\frameworks\yii-1.1.15.022a51\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\development\frameworks\yii-1.1.15.022a51\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php(92): CDbCommand->queryAll()
+#2 [internal function]: RunsController->actionView('5')
+#3 C:\development\frameworks\yii-1.1.15.022a51\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RunsController), Array)
+#4 C:\development\frameworks\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RunsController), Object(ReflectionMethod), Array)
+#5 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\development\frameworks\yii-1.1.15.022a51\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\development\frameworks\yii-1.1.15.022a51\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\development\frameworks\yii-1.1.15.022a51\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\development\frameworks\yii-1.1.15.022a51\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\development\frameworks\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('runs/view')
+#15 C:\development\frameworks\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\development\xampp\htdocs\mtcontrool\index.php(15): CApplication->run()
+#17 {main}
+REQUEST_URI=/mtcontrool/index.php/runs/5
+HTTP_REFERER=http://localhost/mtcontrool/index.php/runs/quest/5
+---
+2015/03/17 16:59:28 [trace] [system.CModule] Loading "errorHandler" application component
+2015/03/17 16:59:43 [trace] [system.CModule] Loading "log" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.CModule] Loading "bootstrap" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.CModule] Loading "request" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.CModule] Loading "urlManager" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.web.filters.CFilterChain] Running filter RunsController.filteraccessControl()
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.CModule] Loading "user" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.CModule] Loading "session" application component
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.ar.CActiveRecord] Runs.findByPk()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.CModule] Loading "db" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `runs`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `runs` `t` WHERE `t`.`id`=5 LIMIT 1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (253)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (86)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT tr.id as IDTestRun, c.name as NomeCriterio, tc.num as NumeroTeste, tc.name as NomeTeste, tc.description as Descricao, tc.notes as Notas, tc.steps as Passos, tc.result as Resultado, tr.status as Status 
+    			FROM criteria as c, test_case as tc, test_run as tr 
+    			WHERE tr.id_test_case = tc.id AND tr.id_runs = '5' AND c.id = tc.id_criteria
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (92)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.ar.CActiveRecord] App.findByPk()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (104)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `app`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (104)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `app`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (104)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `app` `t` WHERE `t`.`id`=1 LIMIT 1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (104)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.ar.CActiveRecord] Platforms.findByPk()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (105)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `platforms`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (105)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `platforms`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (105)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `platforms` `t` WHERE `t`.`id`=1 LIMIT 1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (105)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.ar.CActiveRecord] TestRun.findAllByAttributes()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (109)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `test_run`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (109)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `test_run`
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (109)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `test_run` `t` WHERE `t`.`status`=:yp0 AND `t`.`id_runs`=:yp1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (109)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.ar.CActiveRecord] TestRun.findAllByAttributes()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (113)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `test_run` `t` WHERE `t`.`status`=:yp0 AND `t`.`id_runs`=:yp1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (113)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.ar.CActiveRecord] TestRun.findAllByAttributes()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (117)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `test_run` `t` WHERE `t`.`status`=:yp0 AND `t`.`id_runs`=:yp1
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (117)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:44 [trace] [system.db.ar.CActiveRecord] TestRun.findAllByAttributes()
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (122)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `test_run` `t` WHERE `t`.`id_runs`=:yp0
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (122)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:44 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\views\layouts\column1.php (2)
+in C:\development\xampp\htdocs\mtcontrool\protected\controllers\RunsController.php (137)
+in C:\development\xampp\htdocs\mtcontrool\index.php (15)
+2015/03/17 16:59:44 [trace] [system.CModule] Loading "assetManager" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (216)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (52)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (93)
+2015/03/17 16:59:44 [trace] [system.CModule] Loading "clientScript" application component
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (54)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (93)
+in C:\development\xampp\htdocs\mtcontrool\protected\extensions\bootstrap\components\TbApi.php (138)
