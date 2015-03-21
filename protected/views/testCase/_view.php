@@ -29,7 +29,7 @@
 	<?php echo CHtml::encode($data->required); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('note')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('notes')); ?>:</b>
 	<?php echo CHtml::encode($data->note); ?>
 	<br />
 

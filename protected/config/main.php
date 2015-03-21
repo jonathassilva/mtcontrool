@@ -54,7 +54,7 @@ return array(
                 ),
             
 		'user'=>array(
-			'class'=>'application.components.UserLevel',
+			'class'=>'application.components.EWebUser',
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),

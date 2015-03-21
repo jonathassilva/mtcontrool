@@ -33,7 +33,7 @@
                      
                      );?>
 
-       
+    </br>
         <?php echo TbHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array(
 		    'color'=>TbHtml::BUTTON_COLOR_SUCCESS,
 		    'size'=>TbHtml::BUTTON_SIZE_LARGE,

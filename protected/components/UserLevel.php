@@ -2,6 +2,7 @@
 
 class UserLevel extends CWebUser {
 	protected $_model;
+        
 	public function isInRole($nomeRegra) {
 		$usuario = $this->loadUser();
 		$nivelRegra = ManageLevel::getLevel ($nomeRegra);

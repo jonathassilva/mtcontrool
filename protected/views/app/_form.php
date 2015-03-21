@@ -36,7 +36,7 @@ $form = $this->beginWidget ( 'bootstrap.widgets.TbActiveForm', array (
             <?php echo $form->textFieldControlGroup($model,'category',array('span'=>5,'maxlength'=>70)); ?>
 
             <?php echo $form->textFieldControlGroup($model,'developer',array('span'=>5,'maxlength'=>100)); ?>
-
+</br></br>
             <?php
             //array que ir� receber as plataformas selecionadas
 			$selected_platforms = array ();
@@ -54,8 +54,7 @@ $form = $this->beginWidget ( 'bootstrap.widgets.TbActiveForm', array (
 				</div>
 			</div>
 			
-			<br />
-			
+			</br></br>
 			<?php
             //array que ir� receber os sados selecionados
 			$selected_languages = array ();

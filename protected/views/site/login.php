@@ -29,6 +29,14 @@ $this->breadcrumbs=array(
 
 
 <div class="login-body">
+    
+   
+    
+    <div class="position_img">
+    <img src="../../images/INDT_pref_color.png" width="200" height="200"/> 
+    </div>
+    
+    
     <article class="container-login center-block">
         <section>
             <ul id="top-bar" class="nav nav-tabs nav-justified">
@@ -62,7 +70,7 @@ $this->breadcrumbs=array(
 	</div></br>
                                             
 	<div class="form-group ">				
-		<button type="submit" name="log-me-in" id="submit" tabindex="5" ><i class="icon-arrow-right "></i> Login</button>
+		<button type="submit" name="log-me-in" id="submit" tabindex="5" >Login  <i class="fa fa-sign-in"></i></button>
         </div>
             
         </form>

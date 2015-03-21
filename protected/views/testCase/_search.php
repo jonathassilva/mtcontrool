@@ -21,7 +21,7 @@
 
                     <?php echo $form->textFieldControlGroup($model,'required',array('span'=>5,'maxlength'=>100)); ?>
 
-                    <?php echo $form->textAreaControlGroup($model,'note',array('rows'=>6,'span'=>8)); ?>
+                    <?php echo $form->textAreaControlGroup($model,'notes',array('rows'=>6,'span'=>8)); ?>
 
                     <?php echo $form->textAreaControlGroup($model,'steps',array('rows'=>6,'span'=>8)); ?>
 

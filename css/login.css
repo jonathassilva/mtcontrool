@@ -14,7 +14,7 @@ body {
     min-height: 0;
     width: 480px;
     color: #333333;
-    margin-top: 70px;
+    margin-top: 20px;
     padding: 0;
 	
 }
@@ -30,6 +30,7 @@ body {
 }
 #top-bar {
     display: inherit;
+	
 }
 .nav-tabs.nav-justified {
     border-bottom: 0 none;
@@ -50,6 +51,7 @@ body {
 	font-size: 18px;
     margin-bottom: 0;
     margin-right: 0;
+	
   
 }
 .container-login .nav-tabs.nav-justified > .active > a,
@@ -73,8 +75,9 @@ body {
 	border-radius: 5px;
 	border-color: #000000;
    
-    padding: 30px 50px;
+    padding: 15px 50px;
 	font-size: 17px;
+	
 }
 
 
@@ -293,10 +296,47 @@ body {
 }
 
 
-
-
 label, input, button, select, textarea {
 font-size: 17px;
 font-weight: normal;
 line-height: 20px;
 }
+
+
+
+.position_img{
+	*margin-top: 21px;
+	padding-left: 980px;
+	
+
+}
+
+.position_img_experts{
+	margin-bottom: 40px;
+	padding-left: 0px;
+
+}
+
+.icon-red {
+  background-image: url("/glyphicons-extended/img/glyphicons-halflings-red.png") !important;
+}
+.icon-purple {
+  background-image: url("/glyphicons-extended/img/glyphicons-halflings-purple.png") !important;
+}
+.icon-blue {
+  background-image: url("/glyphicons-extended/img/glyphicons-halflings-blue.png") !important;
+}
+.icon-lightblue {
+  background-image: url("/glyphicons-extended/img/glyphicons-halflings-lightblue.png") !important;
+}
+.icon-green {
+  background-image: url("/glyphicons-extended/img/glyphicons-halflings-green.png") !important;
+}
+.icon-yellow {
+  background-image: url("/glyphicons-extended/img/glyphicons-halflings-yellow.png") !important;
+}
+.icon-orange {
+  background-image: url("/glyphicons-extended/img/glyphicons-halflings-orange.png") !important;
+}
+
+

@@ -44,9 +44,12 @@
                                 
                             )
                         ); ?>
+    
     <div class="littlehelp">
-            <p class="soc-block"> <span class="icon icon-arrow-right" aria-hidden="true"></span> If you wouldn't choose a characteristic, the test case'll be considered default (obrigatory).</p>
-    </div>        
+        
+            <p class="soc-block"> <span class=" icon-arrow-right" aria-hidden="true"></span> If you wouldn't choose a characteristic, the test case'll be considered default (obrigatory).</p>
+    </div>
+    </br>
   <?php echo $form->dropDownListControlGroup($model,'id_characteristic',array(),
                         array(
                             'ajax' => array(
@@ -58,7 +61,7 @@
                         ); ?>
  
 
-    
+    </br>
             <?php
             //array que ir� receber as plataformas selecionadas
 			$selected_platforms = array ();
@@ -76,7 +79,7 @@
 				</div>
 			</div>
     </br>
-    
+    </br>
            
     
     
@@ -89,20 +92,20 @@
 
             <?php echo $form->textFieldControlGroup($model,'required',array('span'=>5,'maxlength'=>100)); ?>
 
-            <?php echo $form->textAreaControlGroup($model,'note',array('rows'=>6,'span'=>8)); ?>
+            <?php echo $form->textAreaControlGroup($model,'notes',array('rows'=>6,'span'=>8)); ?>
 
             <?php echo $form->textAreaControlGroup($model,'steps',array('rows'=>6,'span'=>8)); ?>
 
             <?php echo $form->textAreaControlGroup($model,'result',array('rows'=>6,'span'=>8)); ?>
 
-            
+    </br>
 
-        <div class="form-actions">
+        
         <?php echo TbHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array(
 		    'color'=>TbHtml::BUTTON_COLOR_SUCCESS,
 		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
 		)); ?>
-    </div>
+    
 
     <?php $this->endWidget(); ?>
 

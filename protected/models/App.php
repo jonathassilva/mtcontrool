@@ -122,4 +122,5 @@ class App extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
 }

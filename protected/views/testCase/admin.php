@@ -58,13 +58,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'name',
 		'description',
 		'required',
-		'note',
-		/*
+		'notes',
+		
 		'steps',
 		'result',
-		'id_characteristic',
-		'id_criteria',
-		*/
+		/*'id_characteristic',*/
+		array(
+                    'name'=>'id_criteria',
+                    'value'=>'$data->idCriteria->name',
+                   
+                ),
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
 		),

@@ -29,7 +29,7 @@ class AppController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('*'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update','admin','delete'),
@@ -69,7 +69,7 @@ class AppController extends Controller
 
 		if (isset($_POST['App'])) {
 			$model->attributes=$_POST['App'];
-			$model->setAttribute('id_users', 1);	
+			$model->setAttribute('id_users', Yii::app()->user->id);	
 			//salvando a relacao com a tabela Platforms
 			$model->setRelationRecords('platforms',is_array(@$_POST['Platforms']) ? $_POST['Platforms'] : array());
 			//salvando a relacao com a tabela Languages

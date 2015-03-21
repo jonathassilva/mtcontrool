@@ -6,10 +6,11 @@
  * The followings are the available columns in table 'users':
  * @property integer $id
  * @property string $name
- * @property integer $phone
- * @property integer $level
- * @property string $email
  * @property string $user_name
+ * @property string $country
+ * @property integer $phone
+ * @property string $level
+ * @property string $email
  * @property string $password
  *
  * The followings are the available model relations:
@@ -33,15 +34,17 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, phone, level, email, user_name, password', 'required'),
-			array('phone, level', 'numerical', 'integerOnly'=>true),
+			array('name, user_name, country, phone, level', 'required'),
+			array('phone', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>70),
-			array('email', 'length', 'max'=>100),
 			array('user_name', 'length', 'max'=>60),
+			array('country', 'length', 'max'=>200),
+			array('level', 'length', 'max'=>50),
+			array('email', 'length', 'max'=>100),
 			array('password', 'length', 'max'=>120),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, phone, level, email, user_name, password', 'safe', 'on'=>'search'),
+			array('id, name, user_name, country, phone, level, email, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,12 +60,6 @@ class Users extends CActiveRecord
 		);
 	}
 
-        
-        public function behaviors(){
-		return array(
-				'CSaveRelationsBehavior' => array('class' => 'application.components.CSaveRelationsBehavior'),
-		);
-	}
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
@@ -70,12 +67,13 @@ class Users extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name:',
-			'phone' => 'Phone:',
-			'level' => 'Level:',
-			'email' => 'Email:',
-			'user_name' => 'User Name:',
-			'password' => 'Password:',
+			'name' => 'Name',
+			'user_name' => 'User Name',
+			'country' => 'Country',
+			'phone' => 'Phone',
+			'level' => 'Level',
+			'email' => 'Email',
+			'password' => 'Password',
 		);
 	}
 
@@ -99,10 +97,11 @@ class Users extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('phone',$this->phone);
-		$criteria->compare('level',$this->level);
-		$criteria->compare('email',$this->email,true);
 		$criteria->compare('user_name',$this->user_name,true);
+		$criteria->compare('country',$this->country,true);
+		$criteria->compare('phone',$this->phone);
+		$criteria->compare('level',$this->level,true);
+		$criteria->compare('email',$this->email,true);
 		$criteria->compare('password',$this->password,true);
 
 		return new CActiveDataProvider($this, array(
@@ -121,11 +120,10 @@ class Users extends CActiveRecord
 		return parent::model($className);
 	}
         
-        
         # Função para converter em md5 a variavel password 
         public function beforeSave() 
         { 
-            $pass = md5(md5($this->password).Yii::app()->params["salt"]); 
+            $pass = md5($this->password).Yii::app()->params["salt"]; 
             $this->password = $pass; 
             return true; 
         } 

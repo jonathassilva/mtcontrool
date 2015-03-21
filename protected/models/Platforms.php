@@ -26,6 +26,7 @@ class Platforms extends CActiveRecord
 	/**
 	 * @return array validation rules for model attributes.
 	 */
+        
 	public function rules()
 	{
 		// NOTE: you should only define rules for those attributes that
@@ -36,6 +37,7 @@ class Platforms extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name', 'safe', 'on'=>'search'),
+                       
 		);
 	}
 
@@ -68,6 +70,7 @@ class Platforms extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name:',
+                        'characteristic' => 'Characteristics:',
 		);
 	}
 

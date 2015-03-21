@@ -42,7 +42,7 @@ class Runs extends CActiveRecord {
 						'integerOnly' => true 
 				),
 				array (
-						'description',
+						'version',
 						'length',
 						'max' => 30 
 				),
@@ -54,7 +54,7 @@ class Runs extends CActiveRecord {
 				// The following rule is used by search().
 				// @todo Please remove those attributes that should not be searched.
 				array (
-						'id, id_app, id_platform, description, changelog',
+						'id, id_app, id_platform, version, changelog',
 						'safe',
 						'on' => 'search' 
 				) 
@@ -103,7 +103,7 @@ class Runs extends CActiveRecord {
 				'id' => 'ID',
 				'id_app' => 'App:',
 				'id_platform' => 'Platform:',
-				'description' => 'Description about this test run:',
+				'version' => 'Version:',
 				'changelog' => 'Changelog:' 
 		);
 	}
@@ -127,7 +127,7 @@ class Runs extends CActiveRecord {
 		$criteria->compare ( 'id', $this->id );
 		$criteria->compare ( 'id_app', $this->id_app );
 		$criteria->compare ( 'id_platform', $this->id_platform );
-		$criteria->compare ( 'description', $this->description, true );
+		$criteria->compare ( 'version', $this->version, true );
 		$criteria->compare ( 'changelog', $this->changelog, true );
 		
 		return new CActiveDataProvider ( $this, array (

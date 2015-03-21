@@ -25,7 +25,7 @@ $('.search-form form').submit(function(){
 	href="<?php echo Yii::app()->request->baseUrl; ?>/css/users.css" />
         
 
-<div class="infoblock shadow"><h1 style="color:#20B2AA;">Manage Runs</h1></div>
+<div class="infoblock shadow"><h1 style="color:#20B2AA; font-family: Arial;">Manage Runs</h1></div>
 <HR WIDTH=1180 ALIGN=LEFT >
 
 <?php $this->widget('bootstrap.widgets.TbBreadcrumb', array(
@@ -54,10 +54,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
-		'id_app',
-		'id_platform',
-		'description',
+		//'id',
+		array(
+                    'name'=>'id_app',
+                    'value'=>'$data->idApp->name',
+                ),
+		array(
+                    'name'=>'id_platform',
+                    'value'=>'$data->idPlatform->name',
+                ),
+		'version',
 		'changelog',
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',

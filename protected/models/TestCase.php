@@ -42,13 +42,13 @@ class TestCase extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('num, name, description, required, note, steps, result, id_criteria', 'required'),
+			array('num, name, description, required, notes, steps, result, id_criteria', 'required'),
 			array('id_characteristic, id_criteria', 'numerical', 'integerOnly'=>true),
 			array('num', 'length', 'max'=>10),
 			array('name, required', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, num, name, description, required, note, steps, result, id_characteristic, id_criteria', 'safe', 'on'=>'search'),
+			array('id, num, name, description, required, notes, steps, result, id_characteristic, id_criteria', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -87,7 +87,7 @@ class TestCase extends CActiveRecord
 			'name' => 'Name:',
 			'description' => 'Description:',
 			'required' => 'Required:',
-			'note' => 'Note:',
+			'notes' => 'Note:',
 			'steps' => 'Steps:',
 			'result' => 'Result:',
 			'id_characteristic' => 'Characteristic',
@@ -118,7 +118,7 @@ class TestCase extends CActiveRecord
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('required',$this->required,true);
-		$criteria->compare('note',$this->note,true);
+		$criteria->compare('notes',$this->notes,true);
 		$criteria->compare('steps',$this->steps,true);
 		$criteria->compare('result',$this->result,true);
 		$criteria->compare('id_characteristic',$this->id_characteristic);

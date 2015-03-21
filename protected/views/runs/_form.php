@@ -39,7 +39,7 @@
                         'prompt'=>'Selected',
                     ));?>
             
-            <?php echo $form->textFieldControlGroup($model,'description',array('span'=>5,'maxlength'=>30)); ?>
+            <?php echo $form->textFieldControlGroup($model,'version',array('span'=>5,'maxlength'=>30)); ?>
 
             <?php echo $form->textAreaControlGroup($model,'changelog',array('rows'=>6,'span'=>8)); ?>
 	

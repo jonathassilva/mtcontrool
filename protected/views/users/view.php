@@ -26,12 +26,17 @@
     ),
     'data'=>$model,
     'attributes'=>array(
-		'id',
+		//'id',
 		'name',
-		'phone',
-		'level',
-		'email',
 		'user_name',
-		'password',
+		'country',
+		'phone',
+		//'level',
+                array(
+                    'name'=>'level',
+                    'value'=>'$data->user-username',
+                ),
+		'email',
+		//'password',
 	),
 )); ?>

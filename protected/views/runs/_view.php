@@ -23,7 +23,7 @@ $app = App::model()->findByPk($data->id_app);
 	<?php echo CHtml::encode($plataforma->name); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('version')); ?>:</b>
 	<?php echo CHtml::encode($data->description); ?>
 	<br />
 

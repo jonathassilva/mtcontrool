@@ -15,17 +15,19 @@
 
                     <?php echo $form->textFieldControlGroup($model,'name',array('span'=>5,'maxlength'=>70)); ?>
 
+                    <?php echo $form->textFieldControlGroup($model,'user_name',array('span'=>5,'maxlength'=>60)); ?>
+
+                    <?php echo $form->textFieldControlGroup($model,'country',array('span'=>5,'maxlength'=>200)); ?>
+
                     <?php echo $form->textFieldControlGroup($model,'phone',array('span'=>5)); ?>
 
-                    <?php echo $form->textFieldControlGroup($model,'level',array('span'=>5)); ?>
+                    <?php echo $form->textFieldControlGroup($model,'level',array('span'=>5,'maxlength'=>50)); ?>
 
                     <?php echo $form->textFieldControlGroup($model,'email',array('span'=>5,'maxlength'=>100)); ?>
 
-                    <?php echo $form->textFieldControlGroup($model,'user_name',array('span'=>5,'maxlength'=>60)); ?>
-
-                <div class="form-actions">
+           
         <?php echo TbHtml::submitButton('Search',  array('color' => TbHtml::BUTTON_COLOR_SUCCESS,));?>
-    </div>
+   
 
     <?php $this->endWidget(); ?>
 

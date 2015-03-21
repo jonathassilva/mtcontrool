@@ -56,7 +56,7 @@ $this->menu = array (
 
 
 <div class="infoblock shadow">
-	<h1 style="color: #20B2AA; font-family: Arial">Dashboard - <?php echo $nomeApp; ?></h1>
+    <h1 style="color: #20B2AA; font-family: Arial"><i class="fa fa-dashboard" style="color: #000000"></i>  Dashboard - <?php echo $nomeApp; ?></h1>
 </div>
 <HR SIZE=30 WIDTH=1180 ALIGN=LEFT>
 
@@ -131,37 +131,41 @@ $this->menu = array (
  * ) );
  */
 ?>
-<div class="panel panel-primary">
+
+<div class="container">
+    <div class="tabela">
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="row-fluid">
 				<div class="span6">
-					<div class="row-fluid">
-						<div class="span6"
-							style="background-color: #a5c2ed; padding: 15px">
-							<div class="row">
-								<div class="col-xs-3">
-									<i class="fa fa-thumbs-down fa-4x"></i>
-								</div>
-								<div class="col-xs-9 text-right">
-									<div>
+                                    <div class="row-fluid">
+                                        
+                                    <div class="span3">
+                                        <div class="tabela-dash-prim">
+                                            <div class="panel panel-primary">
+                                               <div class="panel-heading" text-size="20"><i class="fa fa-play-circle-o fa-lg"></i>  Tests Completed</div>
+                                                    <div class="panel-body" >
+                                                        
+                                                       
+                                                       
+                                                        <div class="text-right">
+									
 										<h1><?php echo floor(($quantidadePass/$quantidadeTotal)*100)?>%</h1>
-									</div>
-									<div>
+									
 										<p><?php echo ($quantidadePass + $quantidadeFail)?>/<?php echo $quantidadeTotal?> tests completed</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="span6"
-							style="background-color: #e4837b; padding: 15px">
-							<div class="row">
-								<div class="col-xs-3">
-									<i class="fa fa-thumbs-down fa-4x"></i>
-								</div>
-								<div class="col-xs-9 text-right">
+									
+                                                        </div>
+							
+                                                    </div></div></div></div>
+                                                    <div class="span3">
+                                    <div class="tabela-dash-danger">
+					 <div class="panel panel-danger">
+                                               <div class="panel-heading"><i class="fa fa-thumbs-down fa-lg"></i>  Tests Failed</div>
+                                                    <div class="panel-body" >
+								
+								<div class="col-md-1 text-right">
 									<div>
-										<h1><?php echo ($quantidadeFail)?> failed</h1>
+										<h1><?php echo ($quantidadeFail)?> Failed</h1>
 									</div>
 									<div>
 										<p><?php echo $quantidadePass?> passed | <?php echo $quantidadePending?> pending</p>
@@ -169,57 +173,61 @@ $this->menu = array (
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="span6">
-					<div class="row-fluid">
-						<div class="span6"
-							style="background-color: #83e69f; padding: 15px">
-							<div class="row">
-								<div class="col-xs-3">
-									<i class="fa fa-thumbs-down fa-4x"></i>
-								</div>
-								<div class="col-xs-9 text-right">
+                                                </div></div></div></div>
+                                    <div class="span6">
+                                    <div class="row-fluid">
+				<div class="span3">
+                                    <div class="tabela-dash-sucess">
+				 <div class="panel panel-success">
+                                               <div class="panel-heading"><i class="fa fa-cloud fa-lg"></i>   Platform</div>
+                                                    <div class="panel-body" >
+							
+								
+								<div class="col-md-1 text-right">
 									<div>
 										<h1><?php echo "Platform"?></h1>
 									</div>
 									<div>
-										<p>Current: <?php echo $nomePlataforma;?></p>
+										<p>Current: <?php echo $nomePlataforma; ?></p>
+                                                                                
 									</div>
-								</div>
+								
 							</div>
-						</div>
-						<div class="span6"
-							style="background-color: #fb995e; padding: 15px">
-							<div class="row">
-								<div class="col-xs-3">
-									<i class="fa fa-thumbs-down fa-4x"></i>
-								</div>
-								<div class="col-xs-9 text-right">
+                                                    </div></div>
+                                 </div></div>
+                                                <div class="span3">
+                                                    <div class="tabela-dash-warning">
+						<div class="panel panel-warning">
+                                               <div class="panel-heading"><i class="fa fa-mobile fa-lg"></i>  App Version</div>
+                                                    <div class="panel-body" >
+							
+								
+								<div class="col-md-1 text-right">
 									<div>
-										<h1><?php echo $model->description?></h1>
+										<h1><?php echo $model->version?></h1>
 									</div>
 									<div>
 										<p><?php echo $model->changelog?></p>
 									</div>
 								</div>
-							</div>
+							
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+                                                    </div></div></div>
+                                    </div></div>
+                                
+                                </div></div></div></div></div>
 <br />
 <!-- LISTAGEM -->
-<div class="well">
+<div class="formula">
+<div class="panel-dashboard">
+<div class="well-form">
 	<table class="table table-striped">
 		<thead>
 			<tr>
 				<td><b><?php echo 'Criteria'; ?></b></td>
 				<td><b><?php echo 'Code'; ?></b></td>
-				<td><b><?php echo 'Name'; ?></b></td>
+				<td><b><?php echo 'Test Case'; ?></b></td>
 				<td><b><?php echo 'Status'; ?></b></td>
 				<td><b><?php echo 'Operations'; ?></b></td>
 			</tr>
@@ -234,7 +242,7 @@ $this->menu = array (
 
 				<td><a href="#modalOcorrencia<?php echo $dp['IDTestRun']?>"
 					role="button" class="btn" data-toggle="modal"><i
-						class="icon-eye-open"></i></a></td>
+						class="fa fa-eye"></i></a></td>
 			</tr>
 
 			<!-- Informa��es detalhadas das ocorr�ncias -->
@@ -281,7 +289,8 @@ $this->menu = array (
 					<?php echo TbHtml::link('Fail', array('runs/failTestRun', 'id'=> $dp['IDTestRun']),array('class'=>'btn btn-danger')); ?>
 					<?php echo TbHtml::button('Close', array('data-dismiss' => 'modal')); ?>
 				</div>
-			</div>				
+			</div>
+</div>
 		<?php }?>
 		</tbody>
 	</table>

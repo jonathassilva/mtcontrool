@@ -27,7 +27,7 @@
 
             <?php echo $form->textFieldControlGroup($model,'name',array('span'=>5,'maxlength'=>40)); ?>
 
-    
+   
             <?php
             //array que ir� receber as characteristics selecionadas
 			$selected_characteristic = array ();
@@ -38,12 +38,14 @@
 			
 			<div>
 				<?php echo TbHtml::label($model->getAttributeLabel('characteristic'),'Characteristic'); ?>
-				
+			    <p class="help-block">Choose the platform's characteristics.</p>
+                            <div class="model-char">	
 				<div class="portlet-content">
 				<?php echo TbHtml::CheckBoxList('Characteristic', $selected_characteristic , CHtml::listData(Characteristic::model()->findAll(),'id','name'),array('template'=>'{input} {label}')); ?>
 				<?php echo $form->error($model,'characteristic'); ?>
 				</div>
 			</div>
+    </div>
     <br/>
     
         <?php echo TbHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array(

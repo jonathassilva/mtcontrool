@@ -28,7 +28,7 @@
     ),
     'data'=>$model,
     'attributes'=>array(
-		'id',
+		//'id',
 		'num_order',
 		'name',
 	),

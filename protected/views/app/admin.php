@@ -6,7 +6,6 @@
 
 
 
-
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
 	$('.search-form').toggle();
@@ -56,13 +55,17 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'id'=>'app-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
-	'columns'=>array(
-		'id',
+        
+        'columns'=>array(
+		//'id',
 		'name',
 		'description',
 		'category',
 		'developer',
-		'id_users',
+		array(
+                    'name'=>'id_users',
+                    'value'=>'$data->idUsers->user_name',
+                ),
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
 		),

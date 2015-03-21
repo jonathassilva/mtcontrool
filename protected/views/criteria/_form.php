@@ -24,13 +24,13 @@
             <?php echo $form->textFieldControlGroup($model,'num_order',array('span'=>5,'maxlength'=>45)); ?>
 
             <?php echo $form->textFieldControlGroup($model,'name',array('span'=>5,'maxlength'=>200)); ?>
-
-        <div class="form-actions">
+    </br>
+        
         <?php echo TbHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array(
 		    'color'=>TbHtml::BUTTON_COLOR_SUCCESS,
 		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
 		)); ?>
-    </div>
+    
 
     <?php $this->endWidget(); ?>
 

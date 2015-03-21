@@ -98,6 +98,7 @@ class SiteController extends Controller
 		$this->render('login',array('model'=>$model));
 	}
 
+
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */

@@ -105,4 +105,6 @@ class Criteria extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+       
 }

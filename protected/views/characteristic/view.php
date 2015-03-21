@@ -28,7 +28,7 @@ $this->widget('bootstrap.widgets.TbBreadcrumb', array(
     ),
     'data'=>$model,
     'attributes'=>array(
-		'id',
+		//'id',
 		'name',
 		'id_criteria',
 	),
