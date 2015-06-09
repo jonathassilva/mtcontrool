@@ -65,7 +65,19 @@ $this->breadcrumbs = array (
 			?>
                 
 	</div>
-	 <?php echo TbHtml::link('Submit', array('runs/saveWPQuest', 'id'=> $idRuns), array('class'=>'btn btn-success')); ?> 
+
+ <?php echo TbHtml::button('Back', array('onclick' => 'js:document.location.href="/mtcontrool/runs/create"',
+                    'color'=>TbHtml::BUTTON_COLOR_DEFAULT,
+		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
+                )); ?>
+	 <?php echo TbHtml::link('Submit', array('runs/saveWPQuest', 'id'=> $idRuns), array('class'=>'btn btn-success btn-large')); ?> 
+
+ <?php echo TbHtml::button('Cancel', array('onclick' => 'js:document.location.href="/mtcontrool"',
+                    'color'=>TbHtml::BUTTON_COLOR_DANGER,
+		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
+                )); ?>
+
+
 
 <?php $this->endWidget(); ?>
     

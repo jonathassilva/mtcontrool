@@ -32,10 +32,7 @@
 		'country',
 		'phone',
 		//'level',
-                array(
-                    'name'=>'level',
-                    'value'=>'$data->user-username',
-                ),
+                
 		'email',
 		//'password',
 	),

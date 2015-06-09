@@ -56,11 +56,24 @@ $this->menu = array (
 
 
 <div class="infoblock shadow">
-    <h1 style="color: #20B2AA; font-family: Arial"><i class="fa fa-dashboard" style="color: #000000"></i>  Dashboard - <?php echo $nomeApp; ?></h1>
+    <h1 style="color: #20B2AA; font-family: Arial">
+        <img src="../../images/dash-grande.png" height="70" width="70">
+        Dashboard - <?php echo $nomeApp; ?></h1>
 </div>
-<HR SIZE=30 WIDTH=1180 ALIGN=LEFT>
+<br/>
 
+<?php $this->widget('bootstrap.widgets.TbBreadcrumb', array(
+    'links' => array(
+       'Dashboard'=>array('runs/index'),
+	
+        
+        $nomeApp,
+        '/ Runs ',
+        $model->id_order ,
+    ),
+)); ?>
 
+<br/>
 
 <?php
 
@@ -149,8 +162,8 @@ $this->menu = array (
                                                        
                                                        
                                                         <div class="text-right">
-									
-										<h1><?php echo floor(($quantidadePass/$quantidadeTotal)*100)?>%</h1>
+					
+										<h1><?php echo floor((($quantidadePass + $quantidadeFail)/$quantidadeTotal)*100)?>%</h1>
 									
 										<p><?php echo ($quantidadePass + $quantidadeFail)?>/<?php echo $quantidadeTotal?> tests completed</p>
 									
@@ -185,11 +198,10 @@ $this->menu = array (
 								
 								<div class="col-md-1 text-right">
 									<div>
-										<h1><?php echo "Platform"?></h1>
+										<h1><?php echo $nomePlataforma; ?></h1>
 									</div>
 									<div>
-										<p>Current: <?php echo $nomePlataforma; ?></p>
-                                                                                
+										
 									</div>
 								
 							</div>
@@ -219,9 +231,10 @@ $this->menu = array (
                                 </div></div></div></div></div>
 <br />
 <!-- LISTAGEM -->
-<div class="formula">
+<!--<div class="formula"> -->
 <div class="panel-dashboard">
-<div class="well-form">
+<!-- <div class="well-form"> -->
+<div class="jumbotron">
 	<table class="table table-striped">
 		<thead>
 			<tr>
@@ -238,7 +251,7 @@ $this->menu = array (
 				<td><?php echo $dp['NomeCriterio']?></td>
 				<td><?php echo $dp['NumeroTeste'];?></td>
 				<td><?php echo $dp['NomeTeste']?></td>
-				<td><?php if($dp['Status'] == 0){echo TbHtml::labelTb('Pending', array('color' => TbHtml::LABEL_COLOR_WARNING));} else if($dp['Status'] == 1){echo TbHtml::labelTb('Passed', array('color' => TbHtml::LABEL_COLOR_SUCCESS));} else echo TbHtml::labelTb('Fail', array('color' => TbHtml::LABEL_COLOR_IMPORTANT));?></td>
+				<td><?php if($dp['Status'] == 0){echo TbHtml::labelTb('Pending', array('color' => TbHtml::LABEL_COLOR_WARNING));} else if($dp['Status'] == 1){echo TbHtml::labelTb('Passed', array('color' => TbHtml::LABEL_COLOR_SUCCESS));} else echo TbHtml::labelTb('Failed', array('color' => TbHtml::LABEL_COLOR_IMPORTANT));?></td>
 
 				<td><a href="#modalOcorrencia<?php echo $dp['IDTestRun']?>"
 					role="button" class="btn" data-toggle="modal"><i
@@ -290,7 +303,7 @@ $this->menu = array (
 					<?php echo TbHtml::button('Close', array('data-dismiss' => 'modal')); ?>
 				</div>
 			</div>
-</div>
+<!--</div>-->
 		<?php }?>
 		</tbody>
 	</table>

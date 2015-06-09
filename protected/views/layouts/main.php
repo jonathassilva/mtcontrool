@@ -17,12 +17,13 @@
 	href="<?php echo Yii::app()->request->baseUrl; ?>/protected/extensions/bootstrap/assets/bootstrap.css" />
       
 
+
     
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
+
          <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
          
          
@@ -51,7 +52,7 @@
 				
 				$this->widget ( 'bootstrap.widgets.TbNavbar', array (
 						'color' => TbHtml::NAVBAR_COLOR_INVERSE,
-						'brandLabel' => '<img src ="' . Yii::app ()->request->baseUrl . '/images/logo.png" />',
+						'brandLabel' => '<img src ="' . Yii::app ()->request->baseUrl . '/images/logo.png" /><img src ="' . Yii::app ()->request->baseUrl . '/images/preto.png" />',
 						'collapse' => true,
 						'items' => array (
 								array (
@@ -60,7 +61,7 @@
 												
                                                                                                 array (
 														'label' => 'Register',
-                                                                                                                'icon' => 'icon-pencil icon-skyblue',
+                                                                                                                'icon' => 'fa fa-user-plus',
 														'url' => array (
 																'/users/register' 
 														),
@@ -71,7 +72,7 @@
 												
 												array (
 														'label' => 'User',
-                                                                                                                'icon' => 'icon-pencil icon-white',
+                                                                                                                'icon' => 'icon-user icon-white',
 														'url' => array (
 																'/user' 
 														),
@@ -92,14 +93,14 @@
 																		),
 																		'visible'=>(Yii::app()->user->isAdmin()), 
 																),
-                                                                                                                                array(
+                                                                                                                             /*   array(
                                                                                                                                                 'label' => 'Change Password',
                                                                                                                                                 'url' => array(
-                                                                                                                                                                'site/changepassword'
-                                                                                                                                                ),
+                                                                                                                                                                '/users/changepassword'
+                                                                                                                                                ),'visible' => ! Yii::app ()->user->isGuest,
                                                                                                                                                 
                                                                                                                                     
-                                                                                                                                )
+                                                                                                                                )*/
 														) 
 												),
 										                                                                                   
@@ -107,7 +108,7 @@
                                                                                     
                                                                                     array (
 														'label' => 'App',
-                                                                                                                'icon' => 'icon-edit icon-white',
+                                                                                                                'icon' => 'fa fa-mobile fa-lg',
 														'url' => array (
 																'/app' 
 														),
@@ -124,7 +125,13 @@
 																		'label' => 'Manage Apps',
 																		'url' => array (
 																				'/app/admin' 
-																		),'visible' => ! Yii::app ()->user->isGuest, 
+																		),'visible' => (Yii::app()->user->isTester()), 
+																), 
+                                                                                                                                array (
+																		'label' => 'Manage Apps',
+																		'url' => array (
+																				'/app/manage' 
+																		),'visible' => (Yii::app()->user->isAdmin()), 
 																) 
 														) 
 												),
@@ -220,6 +227,75 @@
 																) ) 
 																),
 																
+                                                                                                                    
+                                                                                                                    array (
+																		'label' => 'Category',
+                                                                                                                                                'icon' => 'icon-asterisk icon-white',
+                                                                                                                                                'visible'=>(Yii::app()->user->isAdmin()),
+																		                                                                                                                                                'items' => array (
+																array (
+																		'label' => 'New Category',
+																		'url' => array (
+																				'/category/create' 
+																		),'visible'=>(Yii::app()->user->isAdmin()), 
+																),
+																
+																array (
+																		'label' => 'Manage Categories',
+																		'url' => array (
+																				'/category/admin' 
+																		),
+																		'visible'=>(Yii::app()->user->isAdmin()),
+																) ) 
+																),
+																//INICIO BRAND
+															/*	array ('label' => 'Brand',
+                                                                       'icon' => 'icon-asterisk icon-white',
+                                                                       'visible'=>(Yii::app()->user->isAdmin()),
+																	   'items' => array (
+																			array ('label' => 'New Brand',
+																				   'url' => array ('/brand/create'),
+																				   'visible'=>(Yii::app()->user->isAdmin()), 
+																			),
+																			array ('label' => 'Manage Brands',
+																				   'url' => array ('/brand/admin'),
+																					'visible'=>(Yii::app()->user->isAdmin()),
+																			) 
+																		) 
+																),
+																//FIM BRAND
+																//INICIO DEVICE
+																array ('label' => 'Device',
+                                                                       'icon' => 'icon-asterisk icon-white',
+                                                                       'visible'=>(Yii::app()->user->isAdmin()),
+																	   'items' => array (
+																			array ('label' => 'New Device',
+																				   'url' => array ('/device/create'),
+																				   'visible'=>(Yii::app()->user->isAdmin()), 
+																			),
+																			array ('label' => 'Manage Devices',
+																				   'url' => array ('/device/admin'),
+																					'visible'=>(Yii::app()->user->isAdmin()),
+																			) 
+																		) 
+																),
+																//FIM DEVICE
+																//INICIO ELEMENT
+																array ('label' => 'Element',
+                                                                       'icon' => 'icon-asterisk icon-white',
+                                                                       'visible'=>(Yii::app()->user->isAdmin()),
+																	   'items' => array (
+																			array ('label' => 'New Element',
+																				   'url' => array ('/element/create'),
+																				   'visible'=>(Yii::app()->user->isAdmin()), 
+																			),
+																			array ('label' => 'Manage Elements',
+																				   'url' => array ('/element/admin'),
+																					'visible'=>(Yii::app()->user->isAdmin()),
+																			) 
+																		) 
+																),
+															*/	//FIM ELEMENT
 																)),
 														 
                                                                                                    
@@ -247,9 +323,35 @@
 																) 
 														) 
 												),
+												//INICIO TEST CONTEXT
+											/*	array (
+														'label' => 'Test Context',
+                                                                                                                'icon' => 'icon-list-alt icon-white',
+														'url' => array (
+																'/testContext' 
+														),
+														'visible'=>(Yii::app()->user->isAdmin()),
+														'items' => array (
+																array (
+																		'label' => 'New Test Context',
+																		'url' => array (
+																				'/testContext/create' 
+																		),'visible'=>(Yii::app()->user->isAdmin()),
+																),
+																
+																array (
+																		'label' => 'Manage Test Cantext',
+																		'url' => array (
+																				'/testContext/admin' 
+																		),'visible'=>(Yii::app()->user->isAdmin()), 
+																) 
+														) 
+												),*/
+												//FIM TEST CONTEXT
+												
 												array (
 														'label' => 'Runs',
-                                                                                                                'icon' => 'icon-repeat icon-white',  
+                                                                                                                'icon' => 'fa fa-refresh',  
 														'url' => array (
 																'/runs' 
 														),
@@ -266,24 +368,18 @@
 																		'label' => 'Manage Runs',
 																		'url' => array (
 																				'/runs/admin' 
-																		),'visible' => ! Yii::app ()->user->isGuest, 
+																		),'visible'=>(Yii::app()->user->isAdmin()), 
 																) 
 														) 
 												),
-												array (
-														'label' => '',
+												/*array (
+														'label' => 'Dashboard',
+                                                                                                                'icon' => 'icon-eye-open icon-white', 
 														'url' => array (
-																'#' 
+																'/runs/index' 
 														),
 														'visible' => ! Yii::app ()->user->isGuest, 
-												),
-												array (
-														'label' => '',
-														'url' => array (
-																'#' 
-														),
-														'visible' => ! Yii::app ()->user->isGuest, 
-												),
+												),*/
 												array (
 														'label' => '',
 														'url' => array (
@@ -291,6 +387,14 @@
 														),
 														'visible' => ! Yii::app ()->user->isGuest,
 												),
+                                                                                                array (
+														'label' => '',
+														'url' => array (
+																'#' 
+														),
+														'visible' => ! Yii::app ()->user->isGuest,
+												),
+												
 												
 												array (
 														'label' => '',
@@ -306,20 +410,7 @@
 														),
 														'visible' => ! Yii::app ()->user->isGuest, 
 												),
-												array (
-														'label' => '',
-														'url' => array (
-																'#' 
-														),
-														'visible' => ! Yii::app ()->user->isGuest,
-												),
-												array (
-														'label' => '',
-														'url' => array (
-																'#' 
-														),
-														'visible' => ! Yii::app ()->user->isGuest, 
-												),
+												
 												array (
 														'label' => '',
 														'url' => array (
@@ -350,30 +441,6 @@
 														'visible'=>(Yii::app()->user->isTester()),
 												),
 												
-                                                                                                array (
-														'label' => '',
-														'url' => array (
-																'#' 
-														),
-														'visible'=>(Yii::app()->user->isTester()),
-												),
-                                                                                    
-                                                                                                array (
-														'label' => '',
-														'url' => array (
-																'#' 
-														),
-														'visible'=>(Yii::app()->user->isTester()),
-												),
-                                                                                    
-                                                                                                array (
-														'label' => '',
-														'url' => array (
-																'#' 
-														),
-														'visible'=>(Yii::app()->user->isTester()),
-												),
-                                                                                    
                                                                                                 array (
 														'label' => '',
 														'url' => array (
@@ -447,6 +514,11 @@
 												),
                                                                                     
                                                                                                 
+                                                                                                
+                                                                                    
+                                                                                               
+                                                                                    
+                                                                                                
 												
 												array (
 														'label' => 'Login',
@@ -464,13 +536,33 @@
 																
 																// array('label' => 'Action', 'url' => '#'),
 																// array('label' => 'Another action', 'url' => '#'),
-																array (
+                                                                                                                                 array(
+                                                                                                                                                'label' => 'Edit Profile',
+                                                                                                                                                'icon'=>'fa fa-pencil-square-o',
+                                                                                                                                                'url' => array(
+                                                                                                                                                                '/users/profile'
+                                                                                                                                                ),'visible' => ! Yii::app ()->user->isGuest,
+                                                                                                                                                
+                                                                                                                                    
+                                                                                                                                ), 
+                                                                                                                                array(
+                                                                                                                                                'label' => 'Change Password',
+                                                                                                                                                'icon'=>'fa fa-key',
+                                                                                                                                                'url' => array(
+                                                                                                                                                                '/users/changepassword'
+                                                                                                                                                ),'visible' => ! Yii::app ()->user->isGuest,
+                                                                                                                                                
+                                                                                                                                    
+                                                                                                                                ),    
+                                                                                                                                array (
 																		'label' => 'Logout (' . Yii::app ()->user->name . ')',
+                                                                                                                                                
 																		'url' => array (
 																				'/site/logout' 
 																		),
 																		'visible' => ! Yii::app ()->user->isGuest 
-																) 
+																),
+                                                                                                                   
 														) 
 												) 
 										) 
@@ -483,38 +575,7 @@
                                 
 				?>
     
-   <!--
-    
-     <div class="container" style="max-width: 200px; padding: 0px 0; margin-left: 0px; margin-top: 20px; background-color: black; ">
-    <div class="accordion" id="accordion2">
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-        Collapsible Group Item #1
-      </a>
-    </div>
-    <div id="collapseOne" class="accordion-body collapse in">
-      <div class="accordion-inner">
-        Anim pariatur cliche...
-      </div>
-    </div>
-  </div>
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-        Collapsible Group Item #2
-      </a>
-    </div>
-    <div id="collapseTwo" class="accordion-body collapse">
-      <div class="accordion-inner">
-        Anim pariatur cliche...
-      </div>
-    </div>
-  </div>
-</div>
-    </div>            
-                </div>
--->
+   
 
 
 	<!-- 
@@ -555,7 +616,7 @@
 
 	<div class="container">
           
-                
+               
         <?php echo $content; ?>
 	
             </div>
@@ -563,10 +624,33 @@
 
         
         
-</br></br></br></br>
+</body>
+</html>
+
 	<div class="footer text-center">
-                MTControol &copy; <?php echo date('Y'); ?> by UFAM.
-                <br>
+             
+            
+            <!-- Social Footer, Colour Matching Icons -->
+<!-- Include Font Awesome Stylesheet in Header -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- // -->
+<div class="container-footer">
+   
+
+        <div class="text-center center-block">
+            <p class="txt-railway">- Sponsor - | - Development -</p>
+       
+                <?php echo CHtml::image(Yii::app()->request->baseUrl."/images/INDT_pref_color.png","indt",array( 'width'=>'100px','height'=>'100px')); ?> 
+            
+              <?php echo CHtml::image(Yii::app()->request->baseUrl."/images/logo_experts.png","indt",array( 'width'=>'100px','height'=>'100px')); ?> 
+             <?php echo CHtml::image(Yii::app()->request->baseUrl."/images/ufam-ufam.png","indt",array( 'width'=>'50px','height'=>'50px')); ?> 
+        </div>
+           
+    <!--   <br/>
+     <p class="txt-railway"> MTControol &copy; <?php// echo date('Y'); ?> by UFAM. </p>    -->
+</div>
+
+</div>  <br>
 
 	</div>
 	<!-- footer -->
@@ -575,5 +659,3 @@
 
 	<!-- page -->
 
-</body>
-</html>

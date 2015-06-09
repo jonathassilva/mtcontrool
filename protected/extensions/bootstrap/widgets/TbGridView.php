@@ -36,6 +36,7 @@ class TbGridView extends CGridView
      */
     public $template = "{items}\n<div class=\"row-fluid\"><div class=\"span6\">{pager}</div><div class=\"span6\">{summary}</div></div>";
 
+	
     /**
      * Initializes the widget.
      */

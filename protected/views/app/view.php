@@ -30,7 +30,7 @@
 		//'id',
 		'name',
 		'description',
-		'category',
+		//'category',
 		'developer',
                // 'id_users',
 	),

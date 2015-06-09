@@ -12,12 +12,21 @@
  * @property string $level
  * @property string $email
  * @property string $password
+ * @property string $verification_code
  *
  * The followings are the available model relations:
  * @property App[] $apps
  */
+
+
 class Users extends CActiveRecord
 {
+    
+    public $old_password;
+    public $new_password;
+    public $repeat_password;
+    
+     const TESTER=0, ADMIN=1;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -29,6 +38,9 @@ class Users extends CActiveRecord
 	/**
 	 * @return array validation rules for model attributes.
 	 */
+        
+        
+        
 	public function rules()
 	{
 		// NOTE: you should only define rules for those attributes that
@@ -45,6 +57,9 @@ class Users extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name, user_name, country, phone, level, email, password', 'safe', 'on'=>'search'),
+                        array('old_password, new_password, repeat_password', 'required', 'on' => 'changePwd'),
+                        array('old_password', 'findPasswords', 'on' => 'changePwd'),
+                        array('repeat_password', 'compare', 'compareAttribute'=>'new_password', 'on'=>'changePwd'),
 		);
 	}
 
@@ -57,6 +72,7 @@ class Users extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'apps' => array(self::HAS_MANY, 'App', 'id_users'),
+                        'appUsers' => array(self::MANY_MANY, 'AppUsers', 'app_users(id_users, id_app)'),
 		);
 	}
 
@@ -68,7 +84,7 @@ class Users extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
-			'user_name' => 'User Name',
+			'user_name' => 'Username',
 			'country' => 'Country',
 			'phone' => 'Phone',
 			'level' => 'Level',
@@ -127,4 +143,55 @@ class Users extends CActiveRecord
             $this->password = $pass; 
             return true; 
         } 
+        
+     
+         public function findPasswords($attribute, $params)
+        {
+        $user = Users::model()->findByPk(Yii::app()->user->id);
+        if ($user->password != md5($this->old_password))
+            $this->addError($attribute, 'Old password is incorrect.');
+        }
+        
+         public function Getlevel($level){
+            
+     
+          if($level === 1){
+              $level = 'Tester';
+          }else if($level === 0){
+              $level = 'Admin';
+          }
+	 return $level;	
+        }
+          
+        static function getAccessLevelList( $level ){
+            
+            $levelList=array(
+             self::TESTER => 'Tester',
+             self::ADMIN => 'Administrator'
+            );
+            
+            if( $level === null){
+                return $levelList;
+            }elseif ($level != NULL) {
+                return $levelList[ $level ];
+             }
+             
+        }
+        
+        public static function usersAutoComplete($name='') {
+ 
+        // Recommended: Secure Way to Write SQL in Yii 
+    $sql= 'SELECT id ,name AS label FROM users WHERE name LIKE :name';
+        $name = $name.'%';
+        return Yii::app()->db->createCommand($sql)->queryAll(true,array(':name'=>$name));
+ 
+        // Not Recommended: Simple Way for those who can't understand the above way.
+    // Uncomment the below and comment out above 3 lines 
+    /*
+    $sql= "SELECT id ,title AS label FROM users WHERE title LIKE '$name%'";
+        return Yii::app()->db->createCommand($sql)->queryAll();
+    */
+ 
+    }
+        
 }

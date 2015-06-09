@@ -28,9 +28,7 @@
 	<?php echo CHtml::encode($data->description); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('category')); ?>:</b>
-	<?php echo CHtml::encode($data->category); ?>
-	<br />
+	
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('developer')); ?>:</b>
 	<?php echo CHtml::encode($data->developer); ?>

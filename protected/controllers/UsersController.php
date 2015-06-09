@@ -1,12 +1,14 @@
 <?php
+use app\models\FormRecoverPass;
  
 class UsersController extends Controller
 {
+   
     /**
      * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
      * using two-column layout. See 'protected/views/layouts/column2.php'.
      */
-    public $layout='//layouts/column2';
+    public $layout='//layouts/main';
  
     /**
      * @return array action filters
@@ -28,12 +30,12 @@ class UsersController extends Controller
     {
         return array(
             array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('index','view','register'),
+                'actions'=>array('register','edit','recoverpass','changepassword','profile'),
                 'users'=>array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update','admin','delete'),
-                'users'=>array('@'),
+                'actions'=>array('create','update','admin','delete','index','view'),
+                'expression'=>'$user->isAdmin()',
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
                 'actions'=>array(),
@@ -72,10 +74,15 @@ class UsersController extends Controller
         {
             $model->attributes=$_POST['Users'];
             if($model->beforeSave()){
-                if($model->save())
+                
+                if($model->save()){
+               // Yii::app()->user->setFlash('success', "Form posted!");
                 $this->redirect(array('view','id'=>$model->id));
+                }
             }
         }
+        
+        
  
             $this->render('create',array(
                 'model'=>$model,
@@ -109,7 +116,7 @@ class UsersController extends Controller
         $model=new Users;
  
         // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+         $this->performAjaxValidation($model);
  
         if (isset($_POST['Users'])) {
             $model->attributes=$_POST['Users'];
@@ -147,6 +154,52 @@ class UsersController extends Controller
         ));
     }
  
+    public function actionProfile(){
+            $userId = Yii::app()->user->id; 
+            
+             $model=$this->loadModel($userId);
+ 
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+ 
+        if (isset($_POST['Users'])) {
+            $model->attributes=$_POST['Users'];
+            if ($model->save()) {
+                $this->redirect(array('view','id'=>$model->id));
+            }
+        }
+ 
+        $this->render('profile',array(
+            'model'=>$model,
+        ));
+            
+            
+        }
+        
+    
+    
+    public function actionEdit($id)
+    {
+        $model=$this->loadModel($id);
+ 
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+ 
+        if (isset($_POST['Users'])) {
+            $model->attributes=$_POST['Users'];
+            if ($model->save()) {
+                $this->redirect(array('view','id'=>$model->id));
+            }
+        }
+ 
+        $this->render('edit',array(
+            'model'=>$model,
+        ));
+    }
+ 
+   
+    
+    
     /**
      * Deletes a particular model.
      * If deletion is successful, the browser will be redirected to the 'admin' page.
@@ -222,10 +275,36 @@ class UsersController extends Controller
         }
     }
          
-    protected function actionSpecific(){
-        
-        
-        
-    }    
+ 
+    public function actionChangepassword()
+    {      
+   
+    $model = new ChangePasswordForm;
+    if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+    {
+      echo CActiveForm::validate($model);
+      Yii::app()->end();
+    }
+
+    // collect user input data
+    if(isset($_POST['ChangePasswordForm']))
+    {
+      $model->attributes=$_POST['ChangePasswordForm'];
+      // Validar input do user.
+      if($model->validate() && $model->changePassword())
+      {
+       Yii::app()->user->setFlash('success', ' Your password was changed.');
+       $this->redirect( $this->action->id );
+      }
+    }
+    // Mostrar formulario.
+    $this->render('changepassword',array('model'=>$model));
+  
+    }
+    
+    
+    
+
+    
     
 }

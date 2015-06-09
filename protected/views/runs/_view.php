@@ -9,7 +9,13 @@
 <?php 
 $plataforma = Platforms::model()->findByPk($data->id_platform);
 $app = App::model()->findByPk($data->id_app);
+
+$userId = Yii::app()->user->id;
 ?>
+
+<?php echo CHtml::encode($app->name);?>
+
+
 <div class="well">
 
 	<?php echo CHtml::link('View Dashboard',array('view','id'=>$data->id),array('class'=>'btn')); ?>
@@ -24,12 +30,16 @@ $app = App::model()->findByPk($data->id_app);
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('version')); ?>:</b>
-	<?php echo CHtml::encode($data->description); ?>
+	<?php echo CHtml::encode($data->version); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('changelog')); ?>:</b>
-	<?php echo CHtml::encode($data->changelog); ?>
+	<?php echo CHtml::encode($data->name); ?>
 	<br />
 
+        <b><?php echo CHtml::encode($data->getAttributeLabel('id_order')); ?>:</b>
+	<?php echo CHtml::encode($data->id_order); ?>
+	<br />
+        
         <hr>
 </div>

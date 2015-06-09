@@ -17,7 +17,7 @@
 
                     <?php echo $form->textAreaControlGroup($model,'description',array('rows'=>6,'span'=>8)); ?>
 
-                    <?php echo $form->textFieldControlGroup($model,'category',array('span'=>5,'maxlength'=>70)); ?>
+                    <?php// echo $form->textFieldControlGroup($model,'category',array('span'=>5,'maxlength'=>70)); ?>
 
                     <?php echo $form->textFieldControlGroup($model,'developer',array('span'=>5,'maxlength'=>100)); ?>
 

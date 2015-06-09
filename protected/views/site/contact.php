@@ -9,6 +9,9 @@ $this->breadcrumbs=array(
 );
 ?>
 
+<link rel="stylesheet" type="text/css"
+	href="<?php echo Yii::app()->request->baseUrl; ?>/css/users.css" />
+
 <h1>Contact Us</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>

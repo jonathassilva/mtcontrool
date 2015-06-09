@@ -32,10 +32,16 @@ $this->breadcrumbs=array(
     
    
     
-    <div class="position_img">
-    <img src="../../images/INDT_pref_color.png" width="200" height="200"/> 
+    <!-- <div class="position_img">
+    <img src="../../images/INDT_pref_color.png" class="indt" width="200" height="200"/> 
     </div>
     
+    
+    <div class="position_img_experts">
+    <img src="../../images/logo_experts.png" class="experts" width="175" height="175" align="left" /> 
+    </div>
+    
+    -->
     
     <article class="container-login center-block">
         <section>
@@ -72,14 +78,26 @@ $this->breadcrumbs=array(
 	<div class="form-group ">				
 		<button type="submit" name="log-me-in" id="submit" tabindex="5" >Login  <i class="fa fa-sign-in"></i></button>
         </div>
-            
+      <br/>
+      <div class="row">
+          
+        <a href="<?php echo Yii::app()->createUrl('/site/recuperarSenha')  ?>"><i class="fa fa-question-circle"></i> Forgot your password?</a> 
+      </div>
         </form>
         </section>                              
         </article>
         </div>
+
+        
+        
+        
+        </div>
 </div>
 </div>
-</div>
+
+
+
+
 <?php $this->endWidget(); ?>
 <!-- form -->
-
+<br/>

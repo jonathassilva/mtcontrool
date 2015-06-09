@@ -18,6 +18,11 @@ class SiteController extends Controller
 			'page'=>array(
 				'class'=>'CViewAction',
 			),
+                        'aclist'=>array(
+                            'class'=>'application.extensions.EAutoCompleteAction',
+                            'model'=>'Users', //My model's class name
+                            'attribute'=>'name,id', //The attribute of the model i will search
+                          ),
 		);
 	}
 
@@ -27,9 +32,11 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+            $this->layout = "//layouts/main"; 
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
+                
 	}
 
 	/**
@@ -144,4 +151,70 @@ class SiteController extends Controller
         }
         
         
+    public function actionRecuperarSenha(){
+
+		$model=new RecuperaSenhaForm;
+		if(isset($_POST['RecuperaSenhaForm']))
+		{
+			$model->attributes=$_POST['RecuperaSenhaForm'];    
+			$user_name = $_POST['RecuperaSenhaForm']['user_name'];
+                         
+			if($model->validate())
+			{
+                $modelUsuario = Users::model()->findByAttributes(array('user_name'=>$user_name));
+				if($modelUsuario){
+					//$calendario = new Calendario;
+					$email = $modelUsuario->email;
+					$geradorDeSenha = new GeraSenha();
+					$novaSenha = $geradorDeSenha->geraSenha(10);
+					$modelUsuario->password = $novaSenha;
+					$modelUsuario->save();
+					$nome = $modelUsuario->name;
+					//$data = $calendario->getData();
+					//$hora = $calendario->getHora();
+					$to = $email;
+					$from = "sistemas@icomp.ufam.edu.br";
+					$subject = "MTControol - New Password";
+					$message = "<html>
+							<h2>MTControol</h2>
+							Olá, $nome.
+							<br/>
+                                                        This message is automatic. Please, don't reply .
+							<br/>
+							<br/>
+							<br/>
+							
+                                                        Your new password is: <b>".$novaSenha."</b> 
+							<br/>
+							<br/>
+							Click <a href='http://sistemas.icomp.ufam.edu.br/mtcontrool/'>aqui</a> to access the system.
+							<br/>
+							<br/>
+							<br/>
+							Thanks.
+							<br/>
+							<br/>
+						</html>";
+					$mail=Yii::app()->Smtpmail;
+					$mail->SetFrom($from, 'no-reply - MTControol');
+					$mail->Subject = $subject;
+					$mail->MsgHTML($message);
+					$mail->AddAddress($to, "");
+					if(!$mail->Send()) {
+						//echo 'alert("AVISO!\nUma mensagem foi enviada para o email cadastrado.")';
+						$this->redirect('/mtcontrool',array('erro' => $mail->ErrorInfo));
+						//echo "Mailer Error: " . $mail->ErrorInfo;
+					}else{
+						echo 'alert("AVISO!\nUma mensagem foi enviada para o email cadastrado.")';
+						$this->redirect('login');
+					}
+				}else{
+					$this->redirect('/mtcontrool');
+				}
+			}
+		}
+        else{
+			$this->render('recuperarSenha',array('model'=>$model));
         }
+    } 
+}

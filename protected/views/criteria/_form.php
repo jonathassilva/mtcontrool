@@ -31,6 +31,10 @@
 		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
 		)); ?>
     
+    <?php echo TbHtml::button('Cancel', array('onclick' => 'js:document.location.href="/mtcontrool"',
+                    'color'=>TbHtml::BUTTON_COLOR_DANGER,
+		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
+                )); ?>
 
     <?php $this->endWidget(); ?>
 

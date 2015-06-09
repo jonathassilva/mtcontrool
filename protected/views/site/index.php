@@ -7,10 +7,7 @@ $this->pageTitle=Yii::app()->name;
 <!--
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
+
 -->
 
 <link rel="stylesheet" type="text/css"
@@ -30,109 +27,42 @@ $this->pageTitle=Yii::app()->name;
 -->
         <script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
         <body>
-            <div class="container">
-                <div class="row vertical-offset-100">
-                    <div class="col-md-4 col-md-offset-4">
-                        
+            
                         <!-- <a href="/atividades/"><img position='left' width="10%"src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo_experts.png" /></a>
               -->
                         
-                        </br></br></br></br></br></br>
-                    </div>
-                </div>
-            </div>
+          
+                  <div class="container">
+                      <div class="span12">
+                           <h1><img src="images/ico.png" class="mobile" positon="right" width="50" height="50"/> MTControol: Mobile Testing Control Tool</h1>
+                      </div>
+
+                     
+                   <div class="span11">
+                  <div class="well-phone">  
+                      
+                      <h3>Main Features</h3>
+                      <br/>
+                      <li><h5>Suggest and manage Testing Criteria;</h5></li>
+                      <li><h5>Support to testing for Multi-platform Mobile Applications;</h5></li>
+                      <li><h5>Suggestions based on Applications and Platforms Characteristics;</h5></li>
+                      <li><h5>Test Cases and Testing Criteria supported by the AQuA Alliance;</h5></li>
+                      <li><h5>Support to create and manage different Testing Runs;</h5></li>
+                      <li><h5>Support to Tester/Test Team manage Applications and testing process by the historic and quantitative data;</h5></li>
+                      <li><h5>Support to Administrator add new Platforms, Testing Criteria, Characteristics and Test Cases</h5></li>
+                      
+                  </div>
+                  </div>
+                      
+                      
+                       <div class="span3">
+                  <img src="images/mobile.png" class="mobile" positon="right" width="200" height="200"/> 
+                  </div>
+                 
+              </div>
+                      
+                  
         </body>
             
-
-
-<!--
-<link rel="stylesheet" type="text/css"
-	href="<?php echo Yii::app()->request->baseUrl; ?>/css/carrousel.css" />
-
-
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-  
-  <div class="overlay"></div>
-
-  
-  <ol class="carousel-indicators">
-    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#bs-carousel" data-slide-to="1"></li>
-    <li data-target="#bs-carousel" data-slide-to="2"></li>
-  </ol>
-  
-  
-  <div class="carousel-inner">
-    <div class="item slides active">
-      <div class="slide-1"></div>
-      <div class="hero">
-        <hgroup>
-            <h1>We are creative</h1>        
-            <h3>Get start your next awesome project</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-2"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1>We are smart</h1>        
-            <h3>Get start your next awesome project</h3>
-        </hgroup>       
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-3"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1>We are amazing</h1>        
-            <h3>Get start your next awesome project</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
-      </div>
-    </div>
-  </div> 
-</div>
-
-
-
-
-
-<!-- Indicators 
- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="images/text-3.jpg" alt="First slide">
-          
-        </div>
-        <div class="item">
-          <img src="images/print.png" alt="Second slide">
-          
-        </div>
-        <div class="item">
-          <img src="images/ban3.jpg" alt="Third slide">
-          
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        
-      </a>
-    </div><!-- /.carousel -->
-
-
-
 
 

@@ -23,7 +23,8 @@ $('.search-form form').submit(function(){
 
 <link rel="stylesheet" type="text/css"
 	href="<?php echo Yii::app()->request->baseUrl; ?>/css/users.css" />
-        
+     
+
 
 <div class="infoblock shadow"><h1 style="color:#20B2AA; font-family: Arial;">Manage Runs</h1></div>
 <HR WIDTH=1180 ALIGN=LEFT >
@@ -36,19 +37,16 @@ $('.search-form form').submit(function(){
 )); ?>
 
 
-<p>
-    You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>
-        &lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn')); ?>
+
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
 )); ?>
 </div><!-- search-form -->
 
+
+<div class="group-div">
 <?php $this->widget('bootstrap.widgets.TbGridView',array(
 	'id'=>'runs-grid',
 	'dataProvider'=>$model->search(),
@@ -59,14 +57,47 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
                     'name'=>'id_app',
                     'value'=>'$data->idApp->name',
                 ),
+             array(
+                     'header'=>'Run',
+                     'name'=>'id_order',
+                    
+                 ),
 		array(
                     'name'=>'id_platform',
                     'value'=>'$data->idPlatform->name',
                 ),
 		'version',
 		'changelog',
+                
+            array(
+                //'header' => t("test_runs", "id"),
+                'header' => 'Passed',
+                'value' => 'Runs::QuantidadePass($data->id)',
+                 'htmlOptions'=>array('style'=>'text-align: center'),
+                'headerHtmlOptions'=>array('style'=>'color: green; text-align: center'),
+               ), 
+            array(
+                //'header' => t("test_runs", "id"),
+                'header' => 'Failed',
+               
+                 'value' => 'Runs::QuantidadeFail($data->id)',
+                'htmlOptions'=>array('style'=>'text-align: center'),
+               'headerHtmlOptions'=>array('style'=>'color: red; text-align: center'),
+               ),
+            array(
+                //'header' => t("test_runs", "id"),
+                'header' => 'Completed (%)',
+                'headerHtmlOptions'=>array('width'=>'100'),
+                'value' => 'Runs::QuantidadeTotal($data->id)',
+                'htmlOptions'=>array('style'=>'text-align: center'),
+                'headerHtmlOptions'=>array('style'=>'text-align: center'),
+               
+                
+               ),
+                //'id_order',
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
+                        'header'=>'Operations',
 		),
 	),
-)); ?>
+        )); ?></div>

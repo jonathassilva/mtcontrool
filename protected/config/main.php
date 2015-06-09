@@ -8,8 +8,9 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'MTControol',
+    
      
-    // 'theme'=>'start',
+    // 'theme'=>'freelancer',
 
         'aliases'=>array(
           'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'), 
@@ -53,20 +54,44 @@ return array(
                     'class'=>'bootstrap.components.TbApi',
                 ),
             
+            
+            
 		'user'=>array(
 			'class'=>'application.components.EWebUser',
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+                   // 'autoUpdateFlash' => false,
 		),
+            
+            'clientScript' => array(
+         'scriptMap' => array(
+            'jquery.js' => false,
+            'jquery.min.js' => false,
+         ),
+      ),
 		
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(
+                    
 			'urlFormat'=>'path',
 			'rules'=>array(
+                                
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
+                    
+                    
+		),
+            'Smtpmail'=>array(
+			'class'=>'application.extensions.smtpmail.PHPMailer',
+			'Host'=>'smtp.gmail.com',
+			'Username'=>'sistemas@icomp.ufam.edu.br',
+			'Password'=>'Si102030',
+			'Mailer'=>'smtp',
+			'Port'=>465,
+			'SMTPSecure'=>'ssl',
+			'SMTPAuth'=>true,
 		),
                 /*
 		'db'=>array(
@@ -111,6 +136,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'ayeka.juh@gmail.com',
 	),
 );

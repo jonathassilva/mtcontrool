@@ -6,6 +6,10 @@
 
 ?>
 
+
+
+
+
 <div class="form">
 
     <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
@@ -244,7 +248,8 @@
     </br>
             <?php echo $form->textFieldControlGroup($model,'user_name',array('span'=>5,'maxlength'=>60)); ?>
             
-            <?php echo $form->passwordFieldControlGroup($model,'password',array('span'=>5,'maxlength'=>120)); ?>
+ <?php echo $form->passwordFieldControlGroup($model,'password',array('span'=>5,'maxlength'=>120)); ?>
+
 
     </br>
         <?php echo TbHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array(
@@ -252,6 +257,13 @@
 		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
 		)); ?>
     
+        <?php echo TbHtml::button('Cancel', array('onclick' => 'js:document.location.href="/mtcontrool"',
+                    'color'=>TbHtml::BUTTON_COLOR_DANGER,
+		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
+          
+                )); ?>
+   
+  
     <?php $this->endWidget(); ?>
 
 </div><!-- form -->

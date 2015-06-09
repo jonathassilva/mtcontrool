@@ -27,10 +27,12 @@ $this->breadcrumbs = array (
 
 
 <div class="well">
+    
     	<?php $testes_selecionados = array();?>
+    
 		<?php echo TbHtml::lead('Characteristics '); ?>
 		<?php echo TbHtml::helpBlock('To improve the quality of testing in  your app, please answer the questions simply check the functionality required by your app.', array('class'=>'help-block'));?>
-		
+		<br/>
 		<p><?php echo TbHtml::b('Memory Use'); ?></p>
 			<?php
 			echo TbHtml::checkBoxList ( 'checkMemory', '', array (
@@ -131,7 +133,19 @@ $this->breadcrumbs = array (
 		) );
 		?>
 	</div>
-	 <?php echo TbHtml::link('Submit', array('runs/saveAndroidQuest', 'id'=> $idRuns), array('class'=>'btn btn-success')); ?> 
+ <?php echo TbHtml::button('Back', array('onclick' => 'js:document.location.href="/mtcontrool/runs/create"',
+                    'color'=>TbHtml::BUTTON_COLOR_DEFAULT,
+		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
+                )); ?>
+	 <?php echo TbHtml::link('Submit', array('runs/saveAndroidQuest', 'id'=> $idRuns), array('class'=>'btn btn-success btn-large')); ?> 
+ 
+         <?php echo TbHtml::button('Cancel', array('onclick' => 'js:document.location.href="/mtcontrool"',
+                    'color'=>TbHtml::BUTTON_COLOR_DANGER,
+		    'size'=>TbHtml::BUTTON_SIZE_LARGE,
+                )); ?>
+
+       
+
 
 <?php $this->endWidget(); ?>
      

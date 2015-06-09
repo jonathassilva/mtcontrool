@@ -36,13 +36,6 @@ $('.search-form form').submit(function(){
     ),
 )); ?>
 
-<p>
-    You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>
-        &lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn')); ?>
 
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
@@ -50,7 +43,19 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('bootstrap.widgets.TbGridView',array(
+
+
+<div class="group-div">
+<?php 
+/*
+                
+$userId = Yii::app()->user->id;
+//$sql = "SELECT level from users WHERE id_users =".$userId;
+$sql = Users::model ()->findBySql ( 'SELECT level from users WHERE id ='.$userId );
+/*
+if($sql = '0'){
+    
+    $this->widget('bootstrap.widgets.TbGridView',array(
     'type' => TbHtml::GRID_TYPE_HOVER,
 	'id'=>'app-grid',
 	'dataProvider'=>$model->search(),
@@ -70,4 +75,104 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 			'class'=>'bootstrap.widgets.TbButtonColumn',
 		),
 	),
-)); ?>
+));
+    
+}else if($sql = '1'){
+    
+    $this->widget('bootstrap.widgets.TbGridView',array(
+    'type' => TbHtml::GRID_TYPE_HOVER,
+	'id'=>'app-grid',
+	'dataProvider'=>$model->searchAdmin(),
+	'filter'=>$model,
+        
+        'columns'=>array(
+		//'id',
+		'name',
+		'description',
+		'category',
+		'developer',
+		array(
+                    'name'=>'id_users',
+                    'value'=>'$data->idUsers->user_name',
+                ),
+		array(
+			'class'=>'bootstrap.widgets.TbButtonColumn',
+		),
+	),
+));
+    
+ */
+$userId = Yii::app()->user->id;
+                
+//$sql =  'SELECT level from users WHERE id ='.$userId ;
+$connection = Yii::app ()->db;
+$command = $connection->createCommand ( 'SELECT level from users WHERE id ='.$userId );
+$rowCount = $command->execute ();
+//echo $rowCount;
+
+$this->widget('bootstrap.widgets.TbGridView',array(
+    'type' => TbHtml::GRID_TYPE_HOVER,
+	'id'=>'app-grid',
+	'dataProvider'=>$model->search(),
+	'filter'=>$model,
+        'rowHtmlOptionsExpression' => 'array("id"=>$data->id)',
+    
+        'columns'=>array(
+                 
+		//'id',
+		'name',
+		'description',
+		//'category',
+		'developer',
+		array(
+                    
+                    'name'=>'id_users',
+                    'value'=>'$data->idUsers->user_name',
+                ),
+            
+            array('class' => 'bootstrap.widgets.TbButtonColumn',
+              // 'header' => 'Operations',
+                'template'=>'{Runs} {Share} {view} {update} {delete}',
+                'htmlOptions' => array('style'=>'width:80px'),
+                'buttons' => array(
+                    
+                    'view'=>array(
+                        'icon'=>'fa fa-eye',
+                    ),
+                    'update'=>array(
+             'icon'=>'fa fa-pencil',
+             
+         ),
+         'delete'=>array(
+            'icon'=>'fa fa-trash-o', 
+         ),
+                       
+                    'Share' => array
+                (
+            
+                'icon'=>'fa fa-share-alt',
+                'url'=>'Yii::app()->createUrl("appUsers/index", array("id"=>$data->id))',
+                ),
+                    'Runs'=>array(
+                      'icon' => 'fa fa-refresh',
+                     // 'imageUrl'=>Yii::app()->request->baseUrl.'/images/re.png',
+                      'url'=>'Yii::app()->createUrl("runs/rodada", array("id"=>$data->id))',
+                       
+                        
+                    ),
+                    
+                    
+                )),
+		/*array(
+			'class'=>'bootstrap.widgets.TbButtonColumn',
+		),*/
+	),
+));
+
+
+?>
+    
+    
+
+</div>
+<br/>
